@@ -1,0 +1,56 @@
+/**
+ * Style the rubric at the top of the screen with the expansion arrow
+ */
+.rubric {
+  position: relative;
+  color: @black;
+  width: 100vw;
+  max-width: @max-content-width - 2;
+  padding: 7px 45px 7px 15px;
+  overflow: hidden;
+  line-height: 26px;
+  max-height: 300px;
+  transition: max-height 0.2s;
+  
+  background: linear-gradient(to right, @light-green, @light-blue);
+ 
+  /*&-text {
+    max-width: @max-content-width;
+    margin: auto auto;
+    padding: 0 40px 0 20px;
+  }*/
+
+  &.mod-can-collapse:before {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(../../media/arrow-collapse.svg) no-repeat;
+    background-size: 18px 18px;
+  }
+
+  &.mod-can-collapse.is-collapsed:before {
+    background-image: url(../../media/arrow-expand.svg);
+  }
+}
+
+.rubric.mod-split {
+  width: 100%;
+}
+    
+/**
+ * Even though this style doesn't appear to do anything, it is absolutely required and used by
+ * RubricBehaviour.ts to inject a specific max-height into this style.
+ */
+.rubric.mod-can-collapse.is-collapsed {
+    display: block;
+}
+
+@media @smallScreen {
+  .rubric {
+    background: @white;
+    box-shadow: 0px 0px 5px @shadow-grey;
+  }
+}

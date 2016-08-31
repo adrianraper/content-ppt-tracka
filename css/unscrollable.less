@@ -1,0 +1,10 @@
+/**
+ * An exercise should import this stylesheet if it is going to manage scrolling itself (e.g. page-split).
+ * This will disable scrolling on the parent.
+ */
+
+// This is just for when testing directly in couloir-content-server and has no effect in CTP
+html, body { height: 100%; width: 100%; overflow: hidden; }
+
+// This is for CTP
+:host { overflow: hidden !important; }

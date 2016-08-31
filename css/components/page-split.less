@@ -1,0 +1,134 @@
+.page-split {
+    width: 200%;
+    height: 100%;
+    position: relative;
+    transition: left 0.5s;
+    left: 0;
+}
+
+.page-split.is-showing-page-two {
+    left: -100%;
+}
+
+.page-split-one, .page-split-two {
+    width: 50%;
+    float: left;
+    height: 100%;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+p {
+    padding: 0 20px;
+    line-height: 26px;
+}
+
+.page-split-two-content {
+    width: 100%;
+    flex: 1;
+}
+
+@media @mediumScreen, @largeScreen {
+  .page-split-two-content {    
+    ol.questions > li {
+      margin: 20px 0 0 0;
+    }
+  }
+}
+
+@media @mediumScreen, @smallScreen {
+    .page-split-two {
+       padding-left: 23px; 
+    }
+    
+    .page-split-one-content {
+        margin-right: 23px;   
+    }
+
+    .page-split-sidebar {
+        position: fixed;
+        top: 0;   
+        width: 20px;
+        height: 100%;
+
+        background: linear-gradient(to bottom, @light-green, @light-blue);
+
+        &.mod-page-one {
+          right: 0;
+          box-shadow: -3px 0px 5px @light-grey;
+        }
+
+        &.mod-page-two {
+          display: none;
+            
+          left: 0;
+          box-shadow: 3px 0px 5px @light-grey;
+        }
+    }
+
+    .page-split-sidebar-text {
+        position: absolute;
+        top: 45%;
+        padding-bottom: 20px;
+        writing-mode: vertical-rl;
+        line-height: 18px;
+        font-size: 14px;
+
+        &.mod-page-one {
+          background: url(../../media/arrow-swipe-left.svg) no-repeat left 4px bottom;    
+          background-size: 7px;
+        }
+
+        &.mod-page-two {
+          background: url(../../media/arrow-swipe-right.svg) no-repeat left 3px bottom; 
+          background-size: 7px;   
+        }
+    }
+     
+    .page-split.is-showing-page-two {
+        .page-split-sidebar {
+          &.mod-page-one {
+            display: none
+          }
+
+          &.mod-page-two {
+            display: block;
+          }
+        }
+    }
+}
+
+@media @largeScreen {
+    .page-split {
+        width: 100%;
+        max-width: 1024px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        border: 1px solid @light-grey;
+        box-shadow: 0 0 5px @light-grey;
+    }
+
+    .page-split-two {
+        padding: 0 15px 0 23px;
+    }
+
+    .page-split-one-content {
+        margin-right: 0px;   
+    }
+
+    .page-split-sidebar.mod-page-two  {
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 5px;
+      background-color: #dbdbdb;
+    }
+
+    .page-split-sidebar-text {
+        display: none;
+    }
+}

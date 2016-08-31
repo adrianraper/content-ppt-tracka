@@ -1,0 +1,21 @@
+li > ol li.is-selected {
+    background: url(../../media/circle.svg) no-repeat left center;
+    background-size: 30px;
+    color: @white;
+    font-weight: normal;
+}
+
+li > ol.answers.mod-horizontal-align li.is-selected {
+  background: none;
+
+  span{
+    background-color: @green;
+    border-radius: 5px;
+    color: @white;
+  }
+}
+
+li > ol.answers.mod-horizontal-align li span {
+   padding: 5px 12px;
+   margin-left: 0;
+}

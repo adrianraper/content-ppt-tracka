@@ -1,0 +1,70 @@
+/**
+ * This is the draggable area itself
+ */
+.draggables {
+    position: fixed; /* this really needs to be position: sticky, but its not supported properly yet */
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: @white;
+    border-top: 1px solid @grey;
+    z-index: 999;
+
+    transform: translateY(100%);
+    transition: transform 0.4s;
+}
+
+.draggables.is-expanded {
+    transform: translateY(0);
+    padding: 5px;
+}
+
+/**
+ * The drop targets, where you put the answers
+ */
+span.droptarget {
+    display: inline-block;
+    background-color: @grey;
+    min-width: 100px; 
+    min-height: 28px;  
+    padding: 0 10px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+}
+
+span.droptarget.is-selected, span.droptarget.is-used {
+    border: 2px solid @green;
+    background-color: @white;
+    color: @green;
+}
+
+/**
+ * The draggables, which you put into drop targets
+ */
+span[draggable]:not(.droptarget) {
+    background: linear-gradient(to right, @light-green, @light-blue);      
+    border-radius: 5px 5px;
+    min-width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    margin: 6px 1vw; 
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    font-weight: 500;
+    font-size: 14px;
+    color: @navy;
+}
+
+span[draggable]:not(.droptarget):hover {
+    background: linear-gradient(to right, @green, @green);
+    color: @white;
+}
+
+span[draggable].is-used:not(.droptarget) {
+    cursor: not-allowed;
+    background: linear-gradient(to right, @grey, @grey);
+    color: @white;
+    border: 0;
+}

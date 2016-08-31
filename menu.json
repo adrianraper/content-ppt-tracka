@@ -1,0 +1,42 @@
+{
+  "courses": [
+    {
+      "id": "a1",
+      "caption": "Tests",
+      "units": [
+        {
+          "id": "c2u1",
+          "caption": "Level Test A",
+          "class": "a3",
+          "exercises": [
+            {
+              "id": "c2u1e1",
+              "href": "tests/a/a-t1.html"
+            },
+            {
+              "id": "c2u1e2",
+              "href": "tests/a/a-t2.html"
+            },
+            {
+              "id": "c2u1e3",
+              "href": "tests/a/a-t3.html"
+            },
+            {
+              "id": "c2u1e4",
+              "href": "tests/a/a-4.html"
+            },
+            {
+              "id": "c2u1e5",
+              "href": "tests/a/a-5.html"
+            },
+            {
+              "id": "c2u1e6",
+              "href": "tests/a/a-6.html"
+            }
+          ]
+        }
+
+      ]
+    }
+  ]
+}

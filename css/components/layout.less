@@ -1,0 +1,103 @@
+/**
+ * This CSS styles the questions and answers lists with a gap between the number and
+ * content, correct horizontal and vertical spacing, and the correct labels and colours.
+ */
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    color: @navy;
+    list-style: decimal-leading-zero inside;
+}
+
+li {
+    margin: 0 20px 20px 20px;
+}
+
+li span {
+    color: @navy;
+    font-size: 16px;
+    line-height: 23px;
+    margin-left: 10px;
+}
+
+li span:nth-child(n+2) {
+    margin-left: 0;
+}
+
+ol.questions > li, 
+ol.questions > div.question-border > li {
+    background: url(../../media/sequence-background-image.svg) no-repeat left 11px top;
+    background-size: 28px;
+    border: 1px solid @navy;
+    border-radius: 5px;
+    padding: 13px 10px 0 51px;
+    margin-top: 20px;
+    color: @white;
+    text-indent: -36px;
+}
+
+ol  p {
+  color: @black;
+  padding: 0 20px;
+}
+
+li > ol {
+    list-style: upper-alpha inside;
+    padding: 15px 0 0 0;
+
+}
+
+li > ol.answers.mod-horizontal-align {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -45px;
+}
+
+li > ol li { 
+    text-indent: -31px;
+    padding: 0 0 0 40px;
+    margin: 0 0 20px -42px;
+    line-height: 30px;
+    border: 0;
+    font-weight: normal;
+}
+
+li > ol.answers.mod-horizontal-align li{
+    margin-left: 0;
+    text-indent: 0;
+    padding: 0 5px 0 5px;
+}
+
+.questions {
+    counter-reset: questionItem;
+}
+
+.questions hr {
+    position: relative;
+    margin: 0 -20px;
+    border: 0;
+    background-color: @grey;
+    height: 1px;
+
+}
+
+.answers {
+    margin: 0;
+    color: @navy;
+}
+
+.answers li span {
+     color: @black;
+     font-size: 16px;
+     font-weight: normal;
+}
+
+@media @mediumScreen, @largeScreen {
+    ol.questions {
+      max-width: @max-question-width;
+      margin: 0 auto;
+    } 
+}
