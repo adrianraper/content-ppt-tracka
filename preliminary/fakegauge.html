@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+  <link rel="stylesheet" href="../css/styles.less" />
+
+  <style>
+    img {
+      width: 100%;
+    }
+  </style>
+
+  <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "id": "b2ab42e897fc4fda828744b609337f93",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 li:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="rubric">
+      <div class="rubric-text">
+        This is track A of PPT for testing purposes.
+      </div>
+    </header>
+
+    <div class="content">
+
+    <ol class="questions">
+                <li id="q1">
+                    <span>Which track is this for?</span>
+                    <ol class="answers">
+                        <li><span>track A</span></li>
+                        <li><span>track B</span></li>
+                    </ol>
+                </li>
+            </ol>
+    </div>
+  </div>
+</body>
+
+</html>

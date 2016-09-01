@@ -1,37 +1,63 @@
 {
   "courses": [
     {
+      "id": "c1",
+      "caption": "Entry course",
+      "units": [
+        {
+          "id": "c1u1",
+          "caption": "Entry unit",
+          "class": "preliminary",
+          "exercises": [
+            {
+              "id": "c1u1e1",
+              "caption": "Instructions",
+              "class": "instructions",
+              "href": "preliminary/fakeinstructions.html"
+            },
+
+            {
+              "id": "c1u1e2",
+              "caption": "Placement test",
+              "class": "placement",
+              "href": "preliminary/fakegauge.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "a1",
       "caption": "Tests",
       "units": [
         {
-          "id": "c2u1",
+          "id": "a1u1",
           "caption": "Level Test A",
           "class": "a3",
           "exercises": [
             {
-              "id": "c2u1e1",
+              "id": "a1u1e1",
               "href": "tests/a/a-t1.html"
             },
             {
-              "id": "c2u1e2",
+              "id": "a1u1e2",
               "href": "tests/a/a-t2.html"
             },
             {
-              "id": "c2u1e3",
+              "id": "a1u1e3",
               "href": "tests/a/a-t3.html"
             },
             {
-              "id": "c2u1e4",
-              "href": "tests/a/a-4.html"
+              "id": "a1u1e4",
+              "href": "tests/a/a-t4.html"
             },
             {
-              "id": "c2u1e5",
-              "href": "tests/a/a-5.html"
+              "id": "a1u1e5",
+              "href": "tests/a/a-t5.html"
             },
             {
-              "id": "c2u1e6",
-              "href": "tests/a/a-6.html"
+              "id": "a1u1e6",
+              "href": "tests/a/a-t6.html"
             }
           ]
         }
