@@ -15,11 +15,11 @@
   <script id="model" type="application/json">
       {
         "questions": [
-          <!-- gauge for a1 -->
           {
             "id": "d8bf84df-502f-4203-8c63-18549a183a1e",
             "questionType": "FreeDragQuestion",
             "block": "#q1",
+            "source": "#d1",
             "answers": [
               {
                 "source": "#a1",
@@ -541,8 +541,7 @@
                 "correct": true
               }
             ]
-          }
-          <!-- gauge for a2 -->
+          },
           {
             "id": "cf724bd9-d62f-4a60-a8ee-9cdf18730e0a",
             "questionType": "FreeDragQuestion",
@@ -1178,8 +1177,8 @@
                 "correct": true
               }
             ]
-          },
-          ]
+          }
+        ]
       }
     </script>
 </head>
@@ -1196,33 +1195,29 @@
     </header>
 
     <div class="content">
-
+          
       <ol class="questions">
         Drag the word into the correct place in the sentence.
        
-<p id="freedragq1" class="freedrag">
-	   <li id="q1">
-          <span>I started working <span id="a1" class="freedroptarget space"></span>two years ago.</span><span id="d1" class="freedraggable"="true">here</span>.  
+        <li id="q1" class="freedrag">
+            <span>I started working <span id="a1" class="freedroptarget space"></span>two years ago.</span>
+            <span id="d1" class="freedraggable">here</span>  
         </li>
-		</p>
 
-		<p id="freedragq2" class="freedrag">
-        <li id="q2">
-          <span>I <span id="a2" class="freedroptarget space"></span>drink two cups of coffee in the morning.</span><span id="d2" class="freedraggable"="true">always</span>  
+        <li id="q2" class="freedrag">
+          <span>I <span id="a2" class="freedroptarget space"></span>drink two cups of coffee in the morning.</span>
+          <span id="d2" class="freedraggable"="true">always</span>  
         </li>
-		</p>
 
-		<p id="freedragq3" class="freedrag">
-        <li id="q3">
-          <span>I will call you<span id="a3" class="freedroptarget space"></span></span><span id="d2" class="freedraggable"="true">later</span>.  
+        <li id="q3" class="freedrag">
+          <span>I will call you<span id="a3" class="freedroptarget space"></span>
+          <span id="d2" class="freedraggable"="true">later</span>
         </li>
-		</p>
 
-		<p id="freedragq4" class="freedrag">
-        <li id="q4">
-          <span>He's a <span id="a4" class="freedroptarget space"></span>student but sometimes he's lazy.</span><span id="d3" class="freedraggable""="true">good</span>.  
+        <li id="q4" class="freedrag">
+          <span>He's a <span id="a4" class="freedroptarget space"></span>student but sometimes he's lazy.</span>
+          <span id="d3" class="freedraggable""="true">good</span>
         </li>
-		<p>
 
         <hr/>
         
