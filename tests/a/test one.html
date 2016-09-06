@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="../../css/styles.less" />
+    <link rel="stylesheet" href="../../css/unscrollable.less" />
+
+    <style>
+    </style>
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "id": "24820bd5-7885-45b6-9327-edec11986f43",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": "f2ca5ab1-e121-4aa4-b94b-894869c26282",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+    <div class="page-split">
+        <div class="page-split-one">
+            <div class="page-split-one-content">
+            <header class="rubric mod-split">
+                Read the texts. For each text there are two tasks.
+                Decide if the first statement is true or false. Then read the second statement and choose the correct answer a, b or c.
+            </header>
+            <h1>
+                G’day and welcome to Perth!
+            </h1>
+            <p>
+                Have you just moved here for your job? Perhaps you want to start a new life here with your family? Or maybe you are an international student at the university? We are here to help you feel at home in our city.
+            </p>
+            <p>
+                The Kookaburra Club is a social network of people who have come to live in Perth from other countries around the world or different cities in Australia.
+            </p>
+            <p>
+                We have a “Welcome to Perth” social event on the second Thursday of every month from 6:00pm - 7:30pm. All ages and backgrounds are welcome. It is a great way to meet people and make new friends and we always have a good time!
+            </p>
+            <p>
+                Come and join us for conversation, the chance to make new friends or find out more about everyday life in Perth. You can stay for five minutes or five hours!
+            </p>
+            <p>See you soon!</p>
+            </div>
+            <div class="page-split-sidebar mod-page-one">
+              <span class="page-split-sidebar-text mod-page-one">Questions</span>
+            </div>
+        </div>
+
+        <div class="page-split-two">
+          <div class="container mod-split">
+            <div class="page-split-sidebar mod-page-two">
+              <span class="page-split-sidebar-text mod-page-two">Text</span>
+            </div>  
+            <div class="page-split-two-content">
+              <ol class="questions">
+                <li id="q1">
+                    <span>
+                      The group is for people who have lived in Perth for a long time.
+                    </span>
+                    <ol class="answers mod-true-false">
+                        <li><span>true</span></li>
+                        <li><span>false</span></li>
+                    </ol>
+                </li>
+
+                <li id="q2">
+                    <span>
+                      "Welcome to Perth" meetings take place
+                    </span>
+                    <ol class="answers">
+                        <li><span>once a month.</span></li>
+                        <li><span>on Thursdays.</span></li>
+                        <li><span>twice a month,</span></li>
+                    </ol>
+                </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

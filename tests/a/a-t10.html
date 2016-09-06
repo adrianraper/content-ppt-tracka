@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="../../css/styles.less" />
+    <link rel="stylesheet" href="../../css/unscrollable.less" />
+
+    <style>
+    </style>
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "id": "24820bd5-7885-45b6-9327-edec11986f43",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": "f2ca5ab1-e121-4aa4-b94b-894869c26282",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+<style>
+
+abc {
+	border: 1px solid black;
+}
+</style
+<body>
+    <div class="page-split">
+        <div class="page-split-one">
+            <div class="page-split-one-content">
+            <header class="rubric mod-split">
+                Read the texts. For each text there are two tasks.
+                Decide if the first statement is true or false. Then read the second statement and choose the correct answer a, b or c.
+            </header>
+			<div class="abc">
+            <h1>
+                Re: Confirmation of your reservation
+            </h1>
+            <p>
+                Dear Ms Jansen,
+				I am very pleased to confirm your reservation at our Bed & Breakfast for 3 days from 21 July to 23 July.
+<br></br>
+In your last email, you asked if it is a problem that you do not eat any meat. No, this is not a problem at all. Thank you for telling me in advance.
+There is a computer with internet access in your room. You may use this, or if you prefer to use your own laptop, you are able to do so. There is, however, a small fee for using the internet.
+
+            </p>
+            <ul>
+			<li>There are many places where children can enjoy Melbourne in the springtime.  These include the Wonderland Fun Park, the Melbourne Aquarium and the Enchanted Maze Garden.  There is a special half-price offer at the Melbourne Aquarium for kids under twelve if you make your booking before February 28.</li>
+			<li>In May, the weather here usually starts to get cooler with a little rain, so I would suggest you bring jumpers and perhaps a light jacket to keep you warm.</li>
+			</ul>
+    
+            <p>
+			
+I am looking forward to seeing you in July.
+<br></br>
+Kind regards,
+
+Fiona Ramsay
+
+            </p>
+            
+            </div>
+            <div class="page-split-sidebar mod-page-one">
+              <span class="page-split-sidebar-text mod-page-one">Questions</span>
+            </div>
+        </div>
+
+        <div class="page-split-two">
+          <div class="container mod-split">
+            <div class="page-split-sidebar mod-page-two">
+              <span class="page-split-sidebar-text mod-page-two">Text</span>
+            </div>  
+            <div class="page-split-two-content">
+              <ol class="questions">
+                <li id="q1">
+                    <span>
+                      Ms Jansen has booked a rooom at Ms Ramsay's Bed & Breakfast.
+                    </span>
+					<ol class="answers mod-true-false" type="a">
+			  <form action="demo_form.asp" method="get">
+                        <br>
+ <input type="checkbox" name="true" value="true">true<br>
+ <input type="checkbox" name="false" value="false">false<br>
+                        </br>
+                        </form>
+                    </ol>
+                </li>
+                    
+
+                <li id="q2">
+                    <span>
+                      Fiona Ramsay...
+                    </span>
+                     <ol class="answers mod-true-false" type="a">
+                        <form action="demo_form.asp" method="get">
+                        <br>
+ <input type="checkbox" name="cannot answer Ms Jansen's questions." value="false">for all children who visit Melbourne.<br>
+ <input type="checkbox" name="tell Ms Jansen to bring your own laptop." value="false">tell Ms Jansen to bring your own laptop.<br>
+<input type="checkbox" name="will serve a vegetarian meal." value="true">will serve a vegetarian meal.<br>
+                        </br>
+                        </form>
+                    </ol>
+                </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

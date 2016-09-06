@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="../../css/styles.less" />
+    <link rel="stylesheet" href="../../css/unscrollable.less" />
+
+    <style>
+    </style>
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "id": "24820bd5-7885-45b6-9327-edec11986f43",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": "f2ca5ab1-e121-4aa4-b94b-894869c26282",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+    <div class="page-split">
+        <div class="page-split-one">
+            <div class="page-split-one-content">
+            <header class="rubric mod-split">
+                Read the texts. For each text there are two tasks.
+                Decide if the first statement is true or false. Then read the second statement and choose the correct answer a, b or c.
+            </header>
+            <h1>
+                From: info@visitmelbourne.com
+				To: shaw77@mail.net
+				Re: Melbourne Visitor Information
+            </h1>
+            <p>
+                Dear Mr Shaw,<br></br>
+				Thank you for your enquiry about tourist services here in Melbourne.
+<br></br>
+Please find attached the city guide and hotel information that you requested.  I would also like to answer the other questions that you asked in your email:
+
+            </p>
+            <ul>
+			<li>There are many places where children can enjoy Melbourne in the springtime.  These include the Wonderland Fun Park, the Melbourne Aquarium and the Enchanted Maze Garden.  There is a special half-price offer at the Melbourne Aquarium for kids under twelve if you make your booking before February 28.</li>
+			<li>In May, the weather here usually starts to get cooler with a little rain, so I would suggest you bring jumpers and perhaps a light jacket to keep you warm.</li>
+			</ul>
+    
+            <p>
+                I hope this information is helpful and wish you a very nice trip to Australia.
+
+Sincerely
+<br></br>
+Kylie Simpson <br></br>
+Melbourne Visitor Centre
+
+            </p>
+            
+            </div>
+            <div class="page-split-sidebar mod-page-one">
+              <span class="page-split-sidebar-text mod-page-one">Questions</span>
+            </div>
+        </div>
+
+        <div class="page-split-two">
+          <div class="container mod-split">
+            <div class="page-split-sidebar mod-page-two">
+              <span class="page-split-sidebar-text mod-page-two">Text</span>
+            </div>  
+            <div class="page-split-two-content">
+              <ol class="questions">
+                <li id="q1">
+                    <span>
+                      Mr Shaw visited Melbourne last May.
+                    </span>
+                    <ol class="answers mod-true-false">
+                        <li><span>true</span></li>
+                        <li><span>false</span></li>
+                    </ol>
+                </li>
+
+                <li id="q2">
+                    <span>
+                      There is a special price at Melbourne Aquarium
+                    </span>
+                    <ol class="answers">
+                        <li><span>for all children who visit Melbourne.</span></li>
+                        <li><span>for visitors who buy tickets before the end of February.</span></li>
+                        <li><span>for people who visit on 28 February only.</span></li>
+                    </ol>
+                </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

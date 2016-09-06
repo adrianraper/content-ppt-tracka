@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="../../css/styles.less" />
+    <link rel="stylesheet" href="../../css/unscrollable.less" />
+
+    <style>
+    </style>
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "id": "24820bd5-7885-45b6-9327-edec11986f43",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": "f2ca5ab1-e121-4aa4-b94b-894869c26282",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+<style>
+
+abc {
+	border: 1px solid black;
+}
+</style>
+
+<body>
+    <div class="page-split">
+        <div class="page-split-one">
+            <div class="page-split-one-content">
+            <header class="rubric mod-split">
+                Read the texts. For each text there are two tasks.
+                Decide if the first statement is true or false. Then read the second statement and choose the correct answer a, b or c.
+            </header>
+			<div class="abc">
+            <h1>
+                Generate your own electricity
+            </h1>
+            <p>
+               
+Wind energy is one of the most important new energy sources in the USA. Most of the energy comes from large commercial wind turbines, but more and more energy is being produced by small home wind turbines installed by individuals. Wind power is popular because it is clean and strong winds are not needed - even a little bit of wind will produce power.
+
+Building your own home wind turbine is a fairly simple project which the average home owner can manage. In the long-term, wind power will save you money as well as reducing pollution. Why not try it as many other home owners have done? If you would like to know how to build your own low-cost wind turbine, click here for more information.
+
+            </p>
+            
+            </div>
+            <div class="page-split-sidebar mod-page-one">
+              <span class="page-split-sidebar-text mod-page-one">Questions</span>
+            </div>
+        </div>
+
+        <div class="page-split-two">
+          <div class="container mod-split">
+            <div class="page-split-sidebar mod-page-two">
+              <span class="page-split-sidebar-text mod-page-two">Text</span>
+            </div>  
+            <div class="page-split-two-content">
+              <ol class="questions">
+                <li id="q1">
+                     <span>
+                      Home wind turbines are not popular in the USA.
+                    </span>
+					<ol class="answers mod-true-false" type="a">
+			  <form action="demo_form.asp" method="get">
+                        <br>
+ <input type="checkbox" name="true" value="false">true<br>
+ <input type="checkbox" name="false" value="true">false<br>
+                        </br>
+                        </form>
+                    </ol>
+                </li>
+
+                  <li id="q2">			
+                    <span>
+                      A home wind turbine:
+                    </span>
+                    <ol class="answers mod-true-false" type="a">
+                        <form action="demo_form.asp" method="get">
+                        <br>
+ <input type="checkbox" name="is not difficult to build." value="true">is not difficult to build.<br>
+ <input type="checkbox" name="is very expensive." value="false">is very expensive.<br>
+<input type="checkbox" name="needs lots of wind." value="false">needs lots of wind.<br>
+                        </br>
+                        </form>
+                    </ol>
+                </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

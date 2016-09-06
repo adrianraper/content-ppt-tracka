@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="../../css/styles.less" />
+    <link rel="stylesheet" href="../../css/unscrollable.less" />
+
+    <style>
+    </style>
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "id": "24820bd5-7885-45b6-9327-edec11986f43",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": "f2ca5ab1-e121-4aa4-b94b-894869c26282",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+    <div class="page-split">
+        <div class="page-split-one">
+            <div class="page-split-one-content">
+            <header class="rubric mod-split">
+                Read the texts. For each text there are two tasks.
+                Decide if the first statement is true or false. Then read the second statement and choose the correct answer a, b or c.
+            </header>
+            <h1>
+                Want to work in Ireland? – Find your dream job at www.work-in-ireland.ie
+            </h1>
+            <p>
+               This is your source for summer jobs in Ireland. It is ideal for teens, students, or anyone who is looking for temporary employment. We can help you to make contact with possible employers. Additionally, we offer useful information about employment in Ireland, answering questions about minimum wage, working hours and insurance.
+
+No matter what type of job you are looking for, go to  www.work-in-ireland.ie first. Our partners include companies working in tourism, entertainment, education, sports, child care, agriculture, retail and health care.
+
+Fill in our easy-to-use online form today to find your ideal summer job!
+			
+I am looking forward to seeing you in July.
+
+Kind regards,
+
+Fiona Ramsay
+
+            </p>
+            
+            </div>
+            <div class="page-split-sidebar mod-page-one">
+              <span class="page-split-sidebar-text mod-page-one">Questions</span>
+            </div>
+        </div>
+
+        <div class="page-split-two">
+          <div class="container mod-split">
+            <div class="page-split-sidebar mod-page-two">
+              <span class="page-split-sidebar-text mod-page-two">Text</span>
+            </div>  
+            <div class="page-split-two-content">
+              <ol class="questions">
+                <li id="q1">
+                    <span>
+                      The company work-in-Ireland only helps people looking for permanent work.
+                    </span>
+                    <ol class="answers mod-true-false">
+                        <li><span>true</span></li>
+                        <li><span>false</span></li>
+                    </ol>
+                </li>
+
+                <li id="q2">
+                    <span>
+                      To use the services of the company work-in-Ireland you have to:
+                    </span>
+                    <ol class="answers">
+                        <li><span>Live in Ireland.</span></li>
+                        <li><span>Fill out an online form.</span></li>
+                        <li><span>Be a student.</span></li>
+                    </ol>
+                </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
