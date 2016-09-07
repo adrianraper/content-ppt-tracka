@@ -1,0 +1,45 @@
+.page-split.mod-requirement {
+  .audio-player {
+    margin: 20px 0;
+    width: 95%;
+  }
+
+  .page-split-one-content {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .requirement-paragraph {
+    text-indent: 0px;
+    padding: 0;
+  }
+  
+  @media @smallScreen, @mediumScreen{
+    .draggables {
+      left: 22px;
+      width: 97vw;
+    }
+  }
+
+  @media @largeScreen {
+    .draggables {
+      right: 0;
+      width: 49%;
+    }
+  }
+
+  @media @extraLargeScreen {
+    .draggables {
+      right: 5px;
+      width: 49%;
+    }
+  }
+}
