@@ -1,19 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <link rel="stylesheet" href="../../css/styles.less" />
+  <style></style>
+  <script id="model" type="application/json">
+    {
+        "questions": [
+          {
+            "id": "24820bd5-7885-45b6-9327-edec11986f43",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 li:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": "f2ca5ab1-e121-4aa4-b94b-894869c26282",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+  </script>
+</head>
+    
 <body>
     <div class="page-split">
         <div class="page-split-one">
             <div class="page-split-one-content">
-            <header class="rubric mod-split">
-                
+            <header class="rubric mod-split">     
             </header>
-                <style>
-p {
-    background-color: white;
-    width: 400px;
-    border: 5px solid;
-    padding: 5px;
-    margin: 25px;
-}
-</style>
+
 <p>
 1 June 20<br>
 Summer Music Festival<br>
@@ -25,15 +65,14 @@ I have checked the list and found your name but no payment has been made. We wou
 <br>
 Kind regards,<br>
 Festival Ticket Office
-
-
-            </p>
+</p>
             
             </div>
             <div class="page-split-sidebar mod-page-one">
               <span class="page-split-sidebar-text mod-page-one"></span>
             </div>
-        </div>
+            </div>
+        
 
         <div class="page-split-two">
           <div class="container mod-split">
@@ -51,8 +90,8 @@ Festival Ticket Office
                         type="a">
                         <form action="demo_form.asp" method="get">
                         <br>
-                        <li><span><input type="checkbox" name="true-false" value="true">true</span></li><br>
-                        <li><span><input type="checkbox" name="true-false" value="false">false</span></li><br>
+                        <li><span>true</span></li><br>
+                        <li><span>false</span></li><br>
                         <br>
                         </form>
                     </ol>
@@ -66,15 +105,15 @@ Festival Ticket Office
                         type="a">
                         <form action="demo_form.asp" method="get">
                         <br>
-                        <li><span><input type="checkbox" name="tickets" value="Few Tickets">only a few tickets left.</span></li><br>
-                        <li><span><input type="checkbox" name="tickets" value="Reserved Tickets">only reserved tickets left.</span></li> <br>
-                        <li><span><input type="checkbox" name="tickets" value="No Tickets">no more tickets.</span></li><br>
+                        <li><span>only a few tickets left.</span></li><br>
+                        <li><span>only reserved tickets left.</span></li> <br>
+                        <li><span>no more tickets.</span></li><br>
                         <br>
                         </form>
                     </ol>
                 </li>
 
-            </ol>
+            </ol>   
           </div>
         </div>
       </div>
