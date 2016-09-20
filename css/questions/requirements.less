@@ -18,28 +18,19 @@
   }
 
   .requirement-paragraph {
-    text-indent: 0px;
-    padding: 0;
-  }
-  
-  @media @smallScreen, @mediumScreen{
-    .draggables {
-      left: 22px;
-      width: 97vw;
-    }
-  }
+      text-indent: 0px;
+      padding: 0;
+      width: 100%;
+      margin-top: 10px;
 
-  @media @largeScreen {
-    .draggables {
-      right: 0;
-      width: 49%;
+      &.mod-dragdrop {
+        margin-top: -25px;
+      }
     }
-  }
 
-  @media @extraLargeScreen {
-    .draggables {
-      right: 5px;
-      width: 49%;
-    }
+  @media @mediumScreen, @largeScreen, @extraLargeScreen {
+      .requirement-paragraph.mod-dragdrop {
+        margin: 15px 0 15px 5px;
+      }
   }
 }

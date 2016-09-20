@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="../css/styles.less" />
+    <link rel="stylesheet" href="../css/unscrollable.less" />
+
+    <style>
+    </style>
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "id": "2561567001aa49dca9c9ced953794418",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": "d8bf84df-502f-4203-8c63-18549a183a1e",
+            "questionType": "FreeDragQuestion",
+            "block": "#q3",
+            "source": "#d3",
+            "answers": [
+              {
+                "source": "#a3",
+                "correct": true
+              }
+            ]  
+          },
+          {
+            "id": "d1258b72785c4709b683019c553ae8da",
+            "questionType": "DropdownQuestion",
+            "source": "#s4",
+            "answers": [
+              {
+                "source": "#s4 > option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#s4 > option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#s4 > option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": "52d3c75c18194d15837e5d73bbab7487",
+            "questionType": "DragQuestion",
+            "source": "#q5",
+            "block": "#b5",
+            "answers": [
+              {
+                "source": "#a52",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+    <div class="page-split mod-requirement">
+        <div class="page-split-one">
+            <header class="rubric mod-split">
+                Check your device.
+            </header>
+            <div class="page-split-one-content">
+              <p>
+                This is a check that this device can run the placement test. If you are on a bigger device you will see some sample questions on the right. If you are on a phone, swipe left to see the sample questions.
+              </p>
+            </div>
+            <div class="page-split-sidebar mod-page-one">
+              <span class="page-split-sidebar-text mod-page-one">Questions</span>
+            </div>
+        </div>
+
+        <div class="page-split-two">
+          <div class="container mod-split">
+            <div class="page-split-sidebar mod-page-two">
+              <span class="page-split-sidebar-text mod-page-two">Text</span>
+            </div>  
+            <div class="content mod-split-two">
+              <ol class="questions">
+                <li class="questions-list" id="q1">01
+                  <p class="questions-list-title">
+                      The test has audio, can you click to listen to this one?
+                  </p>
+                  <audio src="audio.mp3" controls="controls">
+                  </audio>
+                </li>
+
+                <li class="questions-list" id="q2">02
+                  <p class="questions-list-title">
+                    This is a multiple choice question, touch or click one of the answers.
+                  </p>
+                  <span>This is a placement test for...</span>
+                  <ol class="questions-list-answers">
+                    <li><span>Arabic</span></li>
+                    <li><span>English</span></li>
+                    <li><span>Spanish</span></li>
+                  </ol>
+                </li>
+                  
+                <li class="questions-list">03
+                  <p class="questions-list-title">
+                    This is a sentence completion question, drag the highlighted word to the correct place in the sentence.
+                  </p>
+                  <p class="questions-list-paragraph mod-freedrag" id="q3">
+                    <span>I started working<span id="a3" class="freedroptarget space"></span>two years ago.</span>
+                    <span id="d3" class="freedraggable">here</span>
+                  </p>
+                </li>
+                
+                <li class="questions-list" id="q4">04
+                  <p>
+                    This is a dropdown question, touch or click the gap and choose an answer.</p>
+                  <p>
+                  <p>
+                    I'm going on holiday to Paris. I'm at the train station now. Our train doesn't leave for an hour. My brother's tired and is
+                    <select id="s4">
+                      <option>sitting</option>
+                      <option>walking</option>
+                      <option>jumping</option>
+                    </select> on his suitcase.
+                  </p>
+                </li>
+                
+                <li class="questions-list">05
+                  <p class="questions-list-title">
+                    This is a touch and select question. Touch the gap and choose an answer.
+                  </p>
+                  <section class="draggables">
+                    <span id="a51" draggable="true">accountant</span>
+                    <span id="a52" draggable="true">technician</span>
+                  </section>
+                  <p>
+                    The <span id="q5" class="droptarget"></span> came to fix my computer.
+                  </p>
+                </li>
+              </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

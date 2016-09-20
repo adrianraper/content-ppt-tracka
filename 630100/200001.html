@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/rubric.css" />
+    <link rel="stylesheet" href="../../css/drop-down-exercise.css" />
+
+    <style>
+        select {
+            margin-bottom: 1.3em;
+        }
+    </style>
+
+    <script id="model" type="application/json">
+      {
+	    "conditions": [
+            {
+                "condition": "threshold", "metric": "score",
+                "upper": "49",
+                "tags": "#CEFRA"
+            },
+            {
+                "condition": "limits", "metric": "score",
+                "lower": "50", "upper": "74",
+                "tags": "#CEFRB"
+            },
+            {
+                "condition": "threshold", "metric": "score",
+                "lower": "75",
+                "tags": "#CEFRC"
+            },
+            {
+                "condition": "always",
+                "tags": "#grammar #english"
+            },
+            {
+                "condition": "threshold", "metric": "duration",
+                "upper": "120",
+                "tags": "#fast"
+            }
+		],
+        "questions": [
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q1",
+            "source": "#q1 > .answers",
+            "answers": [
+              {
+                "source": "#q1 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q1 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q2",
+            "source": "#q2 > .answers",
+            "answers": [
+              {
+                "source": "#q2 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q2 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q2 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q3",
+            "source": "#q3 > .answers",
+            "answers": [
+              {
+                "source": "#q3 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q3 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q3 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q4",
+            "source": "#q4 > .answers",
+            "answers": [
+              {
+                "source": "#q4 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q4 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q4 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q5",
+            "source": "#q5 > .answers",
+            "answers": [
+              {
+                "source": "#q5 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q5 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q5 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q6",
+            "source": "#q6 > .answers",
+            "answers": [
+              {
+                "source": "#q6 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q6 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q6 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q7",
+            "source": "#q7 > .answers",
+            "answers": [
+              {
+                "source": "#q7 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q7 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q7 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q8",
+            "source": "#q8 > .answers",
+            "answers": [
+              {
+                "source": "#q8 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q8 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q8 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q9",
+            "source": "#q9 > .answers",
+            "answers": [
+              {
+                "source": "#q9 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q9 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q9 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q10",
+            "source": "#q10 > .answers",
+            "answers": [
+              {
+                "source": "#q10 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q10 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q10 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q11",
+            "source": "#q11 > .answers",
+            "answers": [
+              {
+                "source": "#q11 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q11 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q11 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q12",
+            "source": "#q12 > .answers",
+            "answers": [
+              {
+                "source": "#q12 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q12 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q12 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q13",
+            "source": "#q13 > .answers",
+            "answers": [
+              {
+                "source": "#q13 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q13 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q13 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q14",
+            "source": "#q14 > .answers",
+            "answers": [
+              {
+                "source": "#q14 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q14 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q14 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q15",
+            "source": "#q15 > .answers",
+            "answers": [
+              {
+                "source": "#q15 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q15 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q15 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+    <header class="rubric">
+        Select the correct answer for each question.
+    </header>
+
+    <ol class="questions">
+        <li id="q1">
+            <select class="answers">
+                <option>There</option>
+                <option>Here</option>
+                <option>This</option>
+            </select> was a strong wind last night.
+        </li>
+
+        <li id="q2">
+            You <select class="answers">
+                <option>can</option>
+                <option>should</option>
+                <option>will</option>
+            </select> clean your teeth twice a day to avoid having problems.
+        </li>
+
+        <li id="q3">
+            My brother <select class="answers">
+                <option>goes to</option>
+                <option>does go to</option>
+                <option>is going to</option>
+            </select> study History at university next year.
+            
+        </li>
+
+        <li id="q4">
+            Mary says she <select class="answers">
+                <option>will go</option>
+                <option>goes</option>
+                <option>does go</option>
+            </select> tomorrow if I go with her.
+        </li>
+
+        <li id="q5">
+            The <select class="answers">
+                <option>popularity</option>
+                <option>popularly</option>
+                <option>popular</option>
+            </select> of technology seems to increase day by day.
+            
+        </li>
+
+        <li id="q6">
+            Angela has a new car. Angela loves
+            <select class="answers">
+                <option>its</option>
+                <option>their</option>
+                <option>her</option>
+            </select> her new car.
+        </li>
+
+        <li id="q7">
+            Carlos comes from London. Carlos <select class="answers">
+                <option>could</option>
+                <option>can</option>
+                <option>may</option>
+            </select> speak English very well.
+        </li>
+
+        <li id="q8">
+            George and Linda stay <select class="answers">
+                <option>at</option>
+                <option>to</option>
+                <option>in</option>
+            </select> the house when it is cold outside.
+            
+        </li>
+
+        <li id="q9">
+            <strong>Alan:</strong>And tell me, what is global warming?<br/>
+            <strong>Tom:</strong> <select class="answers">
+                <option>OK</option>
+                <option>Right</option>
+                <option>Well</option>
+            </select>, it's quite difficult to explain.
+            <strong>Alan:</strong>I suppose I'll have to check on the internet then.<br/>
+        </li>
+
+        <li id="q10">
+            Tom ate <select class="answers">
+                <option>few</option>
+                <option>most</option>
+                <option>many</option>
+            </select> of the chocolate last night.
+        </li>
+
+        <li id="q11">
+            You did play football last week, <select class="answers">
+                <option>didn't you?</option>
+                <option>you did?</option>
+                <option>did you?</option>
+            </select>.
+        </li>
+
+        <li id="q12">
+            There is <select class="answers">
+                <option>a few</option>
+                <option>a little</option>
+                <option>a small</option>
+            </select> coffee left in the pot. Would you like some?
+        </li>
+
+        <li id="q13">
+            Despite <select class="answers">
+                <option>have</option>
+                <option>having</option>
+                <option>haves</option>
+            </select> lived in New York for 8 years, she did not know it very well..
+        </li>
+
+        <li id="q14">
+            When I was a young boy in Ireland, I <select class="answers">
+                <option>could</option>
+                <option>would</option>
+                <option>should</option>
+            </select> often go walking through the fields.
+        </li>
+
+        <li id="q15">
+            <strong>Anne:</strong>Oh! I watched the new TV show last night.<br/>
+            <strong>Jo:</strong>Was it any good?
+            <strong>Anne:</strong>Yes, <select class="answers">
+                <option>mind you</option>
+                <option>still</option>
+                <option>by the way</option>
+            </select> the traffic is so loud I could hear very little.
+        </li>
+    </ol>
+</body>
+</html>

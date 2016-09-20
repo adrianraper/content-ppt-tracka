@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-
     <link rel="stylesheet" href="../../css/styles.less" />
 
-    <style>
-    </style>
-
     <script id="model" type="application/json">
-      {
+    {
         "questions": [
           {
-            "id": "01f88bdae7274495973050843942f6a7",
-            "questionType": "FreeDragQuestion",
-            "block": "#freedragq1",
-            "source": "#d1",
+            "id": "6e3427a6-026b-467f-bcc2-da77dff25240",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
             "answers": [
               {
-                "source": "#a1",
+                "source": "#q1 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(3)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(4)",
                 "correct": true
+              }
+            ]
+          },
+          {
+            "id": "431ed5ef-1360-4ced-9019-43723ca34930",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "id": "4e60cc03-e432-4c14-9a80-af36d3c6688b",
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q3",
+            "answers": [
+              {
+                "source": "#q3 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q3 li:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q3 li:nth-child(3)",
+                "correct": false
+              },
+              {
+                "source": "#q3 li:nth-child(4)",
+                "correct": false
               }
             ]
           }
@@ -28,77 +76,49 @@
       }
     </script>
 </head>
-</style>
 
 <body>
   <div class="container">
     <header class="rubric">
-        In each question a word is underlined. Choose the answer which best
-corresponds to the meaning of the underlined word as used in the sentence.
-Mark "a", "b", "c" or "d".
-
+        In each question a word is underlined. Choose the answer which best corresponds to the meaning of the underlined word as used in the sentence.
     </header>
-  <div class="abc">
+    <div class="content mod-border">
+    <ol class="questions">
+      <li class="questions-list" id="q1">01		
+        <p class="questions-list-title">
+          There is <u>broad-based</u> agreement among economists that consumer confidence is finally rising.
+        </p>
+        <ol class="questions-list-answers">
+            <li><span>complete</span></li>
+            <li><span>exclusive</span></li>
+            <li><span>total</span></li>
+            <li><span>wide</span></li>              
+        </ol>
+      </li>
+      <li class="questions-list" id="q2">02
+        <p class="questions-list-title">
+          To avoid unnecessary risk always follow standard safety <u>procedures</u>.
+        </p>
+        <ol class="questions-list-answers">
+            <li><span>routines</span></li>
+            <li><span>sessions</span></li>
+            <li><span>warnings</span></li>                 
+        </ol>
+      </li>
+      <li class="questions-list" id="q3">03
+        <p class="questions-list-title">
+          The cost of transportation from your hotel to the conference location should be listed under <u>miscellaneous</u> expenses.
+        </p>
+        <ol class="questions-list-answers">
+            <li><span>added</span></li>
+            <li><span>different</span></li>
+            <li><span>special</span></li>
+            <li><span>various</span></li>
+        </ol>
+      </li>
+    </ol>
     </div>
-</body>
- 
-            <div class="page-split-sidebar mod-page-one">
-              <span class="page-split-sidebar-text mod-page-one">Questions</span>
-            </div>
-        </div>
-
-        <div class="page-split-two">
-          <div class="container mod-split">
-            <div class="page-split-sidebar mod-page-two">
-              <span class="page-split-sidebar-text mod-page-two">Text</span>
-            </div>  
-                 <div class="page-split-two-content">
-              <ol class="questions">
-                <li id="q1">			
-                    <span>
-                      There is broad-based agreement among economists that consumer confidence is finally rising.
-                    </span>
-                    <ol class="answers">
-                       
- <li>complete</li>
- <li>exclusive</li>
-<li>total</li>
- <li>wide</li>              
-                    </ol>
-                </li>
-
-                <li id="q2">
-                    <span>
-                      To avoid unnecessary risk always follow standard safety procedures.
-                    </span>
-                    <ol class="answers">
-					
- <li>routines</li>
-<li>sessions</li>
- <li>warnings</li>
-                 
-					</ol>
-                </li>
-				
-				  <li id="q3">
-                    <span>
-                      The cost of transportation from your hotel to the conference location should be listed under
-miscellaneous expenses.
-                    </span>
-                    <ol class="answers">
-					
-                       <li>added</li>
- <li>different</li>
-<li>special</li>
- <li>various<br>
-                    </ol>
-					</li>
-                </ol>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 </body>
 
 </html>

@@ -4,19 +4,20 @@
 .draggables {
     position: fixed; /* this really needs to be position: sticky, but its not supported properly yet */
     width: 100%;
+    left: 0;
     bottom: 0;
     text-align: center;
     background-color: @white;
     border-top: 1px solid @grey;
-    z-index: 999;
 
-    transform: translateY(100%);
+    transform: translate3d(0, 100%, 0);
     transition: transform 0.4s;
 }
 
 .draggables.is-expanded {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
     padding: 5px;
+    z-index: 999;
 }
 
 /**
@@ -27,13 +28,22 @@ span.droptarget {
     background-color: @grey;
     min-width: 100px; 
     min-height: 28px;  
-    padding: 0 10px;
+    padding: 2px 10px;
     vertical-align: middle;
     text-align: center;
     border-radius: 5px;
+
+    &.mod-wordreorderdrag {
+        margin: 10px;
+    }
+
+    &.mod-sentencereorderdrag {
+        text-align: left;
+        margin: 0 20px;
+    }
 }
 
-span.droptarget.is-selected, span.droptarget.is-used {
+span.droptarget.is-used, span.droptarget.is-selected {
     border: 2px solid @green;
     background-color: @white;
     color: @green;
@@ -52,8 +62,8 @@ span[draggable]:not(.droptarget) {
     padding: 10px;
     margin: 6px 1vw; 
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 16px;
     color: @navy;
 }
 
@@ -67,4 +77,35 @@ span[draggable].is-used:not(.droptarget) {
     background: linear-gradient(to right, @grey, @grey);
     color: @white;
     border: 0;
+}
+
+@media @mediumScreen, @largeScreen, @extraLargeScreen {
+  .draggables, .draggables.is-expanded {
+    position: relative; /* this really needs to be position: sticky, but its not supported properly yet */
+    width: 85%;
+    padding: 10px 0;
+    margin: 30px 30px 10px 30px;
+    border: 0;
+    box-shadow: 0 0 7px @light-grey;
+    transform: none;
+  }
+
+  span.droptarget.is-selected {
+    border: initial;
+    background-color: @grey;
+  }
+
+  span.droptarget.is-used {
+    border: 2px solid @green;
+    background-color: @white;
+    color: @green;
+  }
+
+  .content.mod-dragdrop {
+    padding: 2% 4%;
+  }
+
+  span.droptarget.mod-sentencereorderdrag {
+    margin: 0;
+  }
 }

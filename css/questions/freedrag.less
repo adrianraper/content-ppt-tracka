@@ -1,33 +1,23 @@
-.freedrag {
-  text-indent: 0;
-
-  span {
-    margin: 0;
-  }
-
-  .freedraggable {
-    background: @light-green;
-    border-radius: 5px 5px;
-    min-width: 80px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px;
-    margin: 0; 
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-    font-weight: 500;
-    font-size: 14px;
-    color: @navy;
-    
-    &.is-dragging {
-      background: @light-grey;
-    }
-  }
-
-  .freedroptarget {
-
-  }
+p.questions-list-paragraph.mod-freedrag {
+  line-height: 40px;
+  margin-left: 40px;
 }
+
+span.freedraggable {
+  background: @light-green;
+  border-radius: 5px 5px;
+  min-width: 80px;
+  padding: 8px 10px;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  font-weight: 500;
+  font-size: 14px;
+  color: @navy;
+  
+  &.is-dragging {
+    background: @light-grey;
+  }
+} 
+
 
 .left-space:not(:empty) {
   &:before {

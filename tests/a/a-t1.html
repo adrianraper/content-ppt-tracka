@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-
   <link rel="stylesheet" href="../../css/styles.less" />
 
   <style>
     img {
-      width: 25%;
+      width: 50%;
+      display: block;
+      margin: -20px auto 0 auto;
     }
+
     #q2 img,#q3 img,#q4 img {
-      width: 10%;
+      width: 30%;
      }
   </style>
 
@@ -51,7 +52,7 @@
                 "correct": false
               },
               {
-                "source": "#q2 li:nth-child(2)",
+                "source": "#q2 li:nth-child(3)",
                 "correct": false
               },
               {
@@ -74,7 +75,7 @@
                 "correct": false
               },
               {
-                "source": "#q3 li:nth-child(2)",
+                "source": "#q3 li:nth-child(3)",
                 "correct": false
               },
               {
@@ -97,7 +98,7 @@
                 "correct": true
               },
               {
-                "source": "#q4 li:nth-child(2)",
+                "source": "#q4 li:nth-child(3)",
                 "correct": false
               },
               {
@@ -118,49 +119,65 @@
     </header>
 
     <div class="content">
-        <li id="q1">
-          It is your birthday. Which of these speakers is coming to your party?
-          <ol class="answers">
-            <li><img src="../../media/speaker1.png" /><audio src="../../media/speaker1.mp3" controls="controls"></audio></li>
-            <li><img src="../../media/speaker2.png" /><audio src="../../media/speaker2.mp3" controls="controls"></audio></li>
-            <li><img src="../../media/speaker3.png" /><audio src="../../media/speaker3.mp3" controls="controls"></audio></li>
-          </ol>
-        </li>
-
-        <hr/>
-
-        <li id="q2">
-          Match the audios to the pictures.
+      <ol class="questions">
+        <div class="content mod-border">
+          <li class="questions-list" id="q1">01
+            <p class="questions-list-title">
+            It is your birthday. Which of these speakers is coming to your party?
+            </p>
+            <ol class="questions-list-answers mod-image-align">
+              <li><img src="../../media/speaker1.png" /><audio src="../../media/speaker1.mp3" controls="controls"></audio></li>
+              <li><img src="../../media/speaker2.png" /><audio src="../../media/speaker2.mp3" controls="controls"></audio></li>
+              <li><img src="../../media/speaker3.png" /><audio src="../../media/speaker3.mp3" controls="controls"></audio></li>
+            </ol>
+          </li>
+        </div>
+        
+        <div class="content mod-border mod-audio">
           <audio src="../../media/places1.mp3" controls="controls"></audio>
-          <ol class="answers">
-            <li><img src="../../media/sign1.png" /></li>
-            <li><img src="../../media/sign2.png" /></li>
-            <li><img src="../../media/sign3.png" /></li>
-            <li><img src="../../media/sign4.png" /></li>
-          </ol>
-        </li>
-        <li id="q3">
-          Match the audios to the pictures.
+          <li class="questions-list mod-audio" id="q2">02
+            <p class="questions-list-title">
+              Match the audios to the pictures.
+            </p>
+            <ol class="questions-list-answers mod-image-align">
+              <li><img src="../../media/sign1.png" /></li>
+              <li><img src="../../media/sign2.png" /></li>
+              <li><img src="../../media/sign3.png" /></li>
+              <li><img src="../../media/sign4.png" /></li>
+            </ol>
+          </li>
+        </div>
+        
+        <div class="content mod-border mod-audio">
           <audio src="../../media/places2.mp3" controls="controls"></audio>
-          <ol class="answers">
-            <li><img src="../../media/sign1.png" /></li>
-            <li><img src="../../media/sign2.png" /></li>
-            <li><img src="../../media/sign3.png" /></li>
-            <li><img src="../../media/sign4.png" /></li>
-          </ol>
-        </li>
-        <li id="q4">
-          Match the audios to the pictures.
+          <li class="questions-list mod-audio" id="q3">03
+            <p class="questions-list-title">
+              Match the audios to the pictures.
+            </p>
+            <ol class="questions-list-answers mod-image-align">
+              <li><img src="../../media/sign1.png" /></li>
+              <li><img src="../../media/sign2.png" /></li>
+              <li><img src="../../media/sign3.png" /></li>
+              <li><img src="../../media/sign4.png" /></li>
+            </ol>
+          </li>
+        </div>
+
+        <div class="content mod-border mod-audio">
           <audio src="../../media/places3.mp3" controls="controls"></audio>
-          <ol class="answers">
-            <li><img src="../../media/sign1.png" /></li>
-            <li><img src="../../media/sign2.png" /></li>
-            <li><img src="../../media/sign3.png" /></li>
-            <li><img src="../../media/sign4.png" /></li>
-          </ol>
-        </li>
-
-
+          <li class="questions-list mod-audio" id="q4">04
+            <p class="questions-list-title">
+              Match the audios to the pictures.
+            </p>
+            <ol class="questions-list-answers mod-image-align">
+              <li><img src="../../media/sign1.png" /></li>
+              <li><img src="../../media/sign2.png" /></li>
+              <li><img src="../../media/sign3.png" /></li>
+              <li><img src="../../media/sign4.png" /></li>
+            </ol>
+          </li>
+        </div>
+      </ol>
     </div>
   </div>
 </body>

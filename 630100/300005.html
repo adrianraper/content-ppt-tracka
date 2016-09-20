@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/rubric.css" />
+    <link rel="stylesheet" href="../../css/drop-down-exercise.css" />
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "questionType": "DropdownQuestion",
+            "source": "#q1 > .answers",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q1 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "source": "#q2 > .answers",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q2 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q2 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "source": "#q3 > .answers",
+            "block": "#q3",
+            "answers": [
+              {
+                "source": "#q3 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q3 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q3 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "source": "#q4 > .answers",
+            "block": "#q4",
+            "answers": [
+              {
+                "source": "#q4 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q4 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q4 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "source": "#q5 > .answers",
+            "block": "#q5",
+            "answers": [
+              {
+                "source": "#q5 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q5 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q5 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "source": "#q6 > .answers",
+            "block": "#q6",
+            "answers": [
+              {
+                "source": "#q6 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q6 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q6 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "source": "#q7 > .answers",
+            "block": "#q7",
+            "answers": [
+              {
+                "source": "#q7 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q7 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q7 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "source": "#q8 > .answers",
+            "block": "#q8",
+            "answers": [
+              {
+                "source": "#q8 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q8 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q8 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+<body>
+<header class="rubric">
+    Select the correct answer for each question.
+</header>
+<ol class="questions">
+    <li id="q1">
+        I can't move this table. It seems to be
+        <select class="answers">
+            <option>stuck</option>
+            <option>unmoved</option>
+            <option>sticky</option>
+            <option>moveable</option>
+        </select>.
+    </li>
+
+    <li id="q2">
+        I tried <select class="answers">
+            <option>on</option>
+            <option>in</option>
+            <option>up</option>
+            <option>for</option>
+        </select> a new skirt, but it was too tight for me 
+    </li>
+
+    <li id="q3">
+        Good morning! I'm hungry. What's for <select class="answers">
+            <option>breakfast</option>
+            <option>lunch</option>
+            <option>dinner</option>
+            <option>snack</option>
+        </select>?
+    </li>
+
+    <li id="q4">
+        I can't go out tonight. I have to <select class="answers">
+            <option>make</option>
+            <option>write</option>
+            <option>have</option>
+            <option>do</option>
+        </select> my homework.
+    </li>
+
+    <li id="q5">
+        My car <select class="answers">
+            <option>stopped</option>
+            <option>died</option>
+            <option>blew</option>
+            <option>broke</option>
+        </select> down and I had to phone for help.
+    </li>
+
+    <li id="q6">
+        The train came off its <select class="answers">
+            <option>road</option>
+            <option>tracks</option>
+            <option>path</option>
+            <option>way</option>
+        </select> and crashed.
+    </li>
+
+    <li id="q7">
+        I wasn't <select class="answers">
+            <option>capable</option>
+            <option>aware</option>
+            <option>ashamed</option>
+            <option>suspicious</option>
+        </select> of anything strange about Oliver.
+    </li>
+
+    <li id="q8">
+        Bill was <select class="answers">
+            <option>chosen</option>
+            <option>late</option>
+            <option>ready</option>
+            <option>early</option>
+        </select> for work because he missed the bus.
+    </li>
+
+</ol>
+</body>
+</html>

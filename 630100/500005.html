@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/rubric.css" />
+    <link rel="stylesheet" href="../../css/drag-exercise.css" />
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "questionType": "DragQuestion",
+            "source": "#q1",
+            "block": "#b1",
+            "answers": [
+              {
+                "source": "#a5",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DragQuestion",
+            "source": "#q2",
+            "block": "#b2",
+            "answers": [
+              {
+                "source": "#a7",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DragQuestion",
+            "source": "#q3",
+            "block": "#b3",
+            "answers": [
+              {
+                "source": "#a5",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DragQuestion",
+            "source": "#q4",
+            "block": "#b4",
+            "answers": [
+              {
+                "source": "#a7",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DragQuestion",
+            "source": "#q5",
+            "block": "#b5",
+            "answers": [
+              {
+                "source": "#a6",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+</head>
+<body>
+<header class="rubric">
+    Order the sentences below to make a story.
+</header>
+
+<section class="draggables">
+    <span id="a1" draggable="true">Suddenly I heard an unusual sound behind me.</span>
+    <span id="a2" draggable="true">I shouted for help and was very happy to see two policemen in the road outside.</span>
+    <span id="a3" draggable="true">I turned around and was surprised to see a bear coming towards me.</span>
+    <span id="a4" draggable="false">I was working in the garden yesterday.</span>
+    <span id="a5" draggable="true">Unfortunately, the bear followed me and started shaking the tree.</span>
+    <span id="a6" draggable="true">They caught the bear and helped me down from the tree.</span>
+    <span id="a7" draggable="true">I ran towards a tree and climbed it as fast as possible.</span>
+</section>
+
+<ol class="questions">
+    <li id="b1"><label>A</label><span id="q1" class="droptarget">I was working in the garden yesterday.</span></li>
+    <li id="b2"><label>B</label><span id="q2" class="droptarget"></span></li>
+    <li id="b3"><label>C</label><span id="q3" class="droptarget"></span></li>
+    <li id="b4"><label>D</label><span id="q4" class="droptarget"></span></li>
+    <li id="b5"><label>E</label><span id="q5" class="droptarget"></span></li>
+    <li id="b6"><label>F</label><span id="q6" class="droptarget"></span></li>
+    <li id="b7"><label>G</label><span id="q7" class="droptarget"></span></li>
+</ol>
+</body>
+</html>

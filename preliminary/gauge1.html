@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-
   <link rel="stylesheet" href="../css/styles.less" />
-
-  <style>
-    img {
-      width: 100%;
-    }
-  </style>
-
   <script id="model" type="application/json">
-  {
+    {
         "questions": [
           {
-            "id": "d8bf84df-502f-4203-8c63-18549a183a1e",
+            "id": "a4b2073c-fd75-4907-9608-e3dc1a69053e",
             "questionType": "FreeDragQuestion",
             "block": "#q1",
             "source": "#d1",
@@ -27,7 +19,7 @@
             ]
           },
           {
-            "id": "e85eee45-5b7e-49a5-9def-c6127e6e6536",
+            "id": "4f039777-90d2-4ee3-a2d6-f1a16ab6ac45",
             "questionType": "FreeDragQuestion",
             "block": "#q2",
             "source": "#d2",
@@ -39,19 +31,19 @@
             ]
           },
           {
-            "id": "d05c6d2d-784e-4d13-aa04-f9968ccf8e8d",
+            "id": "fc30bb9c-c1fc-43ea-aee9-04a04d05b982",
             "questionType": "FreeDragQuestion",
             "block": "#q3",
             "source": "#d3",
             "answers": [
-            {
+              {
                 "source": "#a3",
                 "correct": true
               }
             ]
           },
           {
-            "id": "8e8e4b44-8e4e-47f3-89d6-75af5b81587e",
+            "id": "43030f0d-8f80-4da1-97e5-760b85862a6e",
             "questionType": "FreeDragQuestion",
             "block": "#q4",
             "source": "#d4",
@@ -59,52 +51,55 @@
               {
                 "source": "#a4",
                 "correct": true
-                }
+              }
             ]
           }
         ]
       }
     </script>
   
-        <body>
+<body>
   <div class="container">
     <header class="rubric">
       <div class="rubric-text">
         There are <strong>20 questions</strong>. Read the instruction for each question.
-        You have <strong>7 minutes</strong> to complete this screen. 
         When you have finished this screen, <strong>click Enter</strong>.
         <strong>You cannot return to this screen after you click Enter.</strong>
       </div>
     </header>
 
-    <div class="content">
-          
+    <div class="content mod-border">
       <ol class="questions">
-        Drag the word into the correct place in the sentence.
-       
-        <li id="q1" class="freedrag">
-            <span>I started working <span id="a1" class="freedroptarget space"></span>two years ago.</span>
-            <span id="d1" class="freedraggable">here</span>  
+         <li class="questions-list">01
+            <p class="questions-list-title" id="q1">
+              <span>I started working<span id="a1" class="freedroptarget space"></span>two years ago.</span>
+              <span id="d1" class="freedraggable">here</span>
+            </p>
         </li>
 
-        <li id="q2" class="freedrag">
-          <span>I <span id="a2" class="freedroptarget space"></span>drink two cups of coffee in the morning.</span>
-          <span id="d2" class="freedraggable">always</span>  
+         <li class="questions-list">02
+          <p class="questions-list-title" id="q2">
+            <span>I<span id="a2" class="freedroptarget space"></span>drink two cups of coffee in the morning.</span>
+            <span id="d2" class="freedraggable">always</span>
+          </p>
         </li>
 
-        <li id="q3" class="freedrag">
-            <span>I will call you<span id="a3" class="freedroptarget space"></span></span>
-          <span id="d3" class="freedraggable">later</span>
+         <li class="questions-list">03
+          <p class="questions-list-title" id="q3">
+            <span>I will call you<span id="a3" class="freedroptarget"></span>.</span>
+            <span id="d3" class="freedraggable">later</span>
+          </p>
         </li>
 
-        <li id="q4" class="freedrag">
-          <span>He's a <span id="a4" class="freedroptarget space"></span>student but sometimes he's lazy.</span>
-          <span id="d3" class="freedraggable">good</span>
+         <li class="questions-list">04
+          <p class="questions-list-title" id="q4">
+            <span>He's a<span id="a4" class="freedroptarget space"></span>student but sometimes he's lazy.</span>
+            <span id="d4" class="freedraggable">good</span>
+          </span>
+          </p>
         </li>
-        </ol>
-      </div>
-            </div>
-        </body>
-  </head>
+      </ol>
+    </div>
+  </body>
 </html>
   

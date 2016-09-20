@@ -1,21 +1,25 @@
-li > ol li.is-selected {
-    background: url(../../media/circle.svg) no-repeat left center;
+ol.questions-list-answers {
+  & > li.is-selected {
+    background: url(../../media/circle.svg) no-repeat left top;
     background-size: 30px;
     color: @white;
     font-weight: normal;
-}
-
-li > ol.answers.mod-horizontal-align li.is-selected {
-  background: none;
-
-  span{
-    background-color: @green;
-    border-radius: 5px;
-    color: @white;
   }
 }
 
-li > ol.answers.mod-horizontal-align li span {
-   padding: 5px 12px;
-   margin-left: 0;
+ol.questions-list-answers.mod-horizontal-align {
+  & > li > span {
+    padding: 5px 12px;
+    margin-left: 0;
+  }
+
+  & > li.is-selected {
+    background: none;
+
+    & > span{
+      background-color: @green;
+      border-radius: 5px;
+      color: @white;
+    }
+  }
 }

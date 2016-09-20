@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/rubric.css" />
+    <link rel="stylesheet" href="../../css/multiple-choice-exercise.css" />
+    <link rel="stylesheet" href="../../css/drop-down-exercise.css" />
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q1",
+            "answers": [
+              {
+                "source": "#q1 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q1 li:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q1 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q2",
+            "answers": [
+              {
+                "source": "#q2 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q2 li:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q2 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q3",
+            "source" : "#q3 > .answers",
+            "answers": [
+              {
+                "source": "#q3 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q3 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q3 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q4",
+            "source" : "#q4 > .answers",
+            "answers": [
+              {
+                "source": "#q4 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q4 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q4 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q5",
+            "source" : "#q5 > .answers",
+            "answers": [
+              {
+                "source": "#q5 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q5 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q5 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q6",
+            "source" : "#q6 > .answers",
+            "answers": [
+              {
+                "source": "#q6 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q6 option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q6 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q7",
+            "source" : "#q7 > .answers",
+            "answers": [
+              {
+                "source": "#q7 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q7 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q7 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q8",
+            "answers": [
+              {
+                "source": "#q8 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q8 li:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#q8 li:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "MultipleChoiceQuestion",
+            "block": "#q9",
+            "answers": [
+              {
+                "source": "#q9 li:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q9 li:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q9 li:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q10",
+            "source" : "#q10 > .answers",
+            "answers": [
+              {
+                "source": "#q10 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q10 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q10 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q11",
+            "source" : "#q11 > .answers",
+            "answers": [
+              {
+                "source": "#q11 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q11 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q11 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q12",
+            "source" : "#q12 > .answers",
+            "answers": [
+              {
+                "source": "#q12 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q12 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q12 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q13",
+            "source" : "#q13 > .answers",
+            "answers": [
+              {
+                "source": "#q13 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q13 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q13 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q14",
+            "source" : "#q14 > .answers",
+            "answers": [
+              {
+                "source": "#q14 option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#q14 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q14 option:nth-child(3)",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q15",
+            "source" : "#q15 > .answers",
+            "answers": [
+              {
+                "source": "#q15 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q15 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q15 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+<body>
+<header class="rubric">
+    Select the correct answer for each question.
+</header>
+
+<ol class="questions">
+    <li id="q1">
+        Which of these is a correct sentence?
+        <ol class="answers">
+            <li><span>Old Mark slow.</span></li>
+            <li><span>John runs fast.</span></li>
+            <li><span>Big fast swim.</span></li>
+        </ol>
+    </li>
+
+    <li id="q2">
+        Which of these sentences is correct? 
+        <ol class="answers">
+            <li><span>Cats loves drinking milk.</span></li>
+            <li><span>Cats love drinking milk.</span></li>
+            <li><span>Cats are loving drinking milk.</span></li>
+        </ol>
+    </li>
+
+    <li id="q3">
+        I found all the <select class="answers">
+            <option>information's</option>
+            <option>information</option>
+            <option>Informations'</option>
+        </select> in the library.
+    </li>
+
+    <li id="q4">
+        She is the best student in <select class="answers">
+            <option>a</option>
+            <option>the</option>
+            <option>an</option>
+        </select> class.
+    </li>
+
+    <li id="q5">
+        The old man is holding a <select class="answers">
+            <option>large</option>
+            <option>kind</option>
+            <option>Happy</option>
+        </select> green bag.
+    </li>
+
+    <li id="q6">
+        No <select class="answers">
+            <option>dog's</option>
+            <option>dogs</option>
+            <option>dogs'</option>
+        </select> are allowed in the new shopping centre.
+    </li>
+
+    <li id="q7">
+        I sent you a postcard. Did you <select class="answers">
+            <option>recieve it?</option>
+            <option>receeve it?</option>
+            <option>receive it?</option>
+        </select>
+    </li>
+
+    <li id="q8">
+        Which of these is correct? 
+        <ol class="answers">
+            <li><span>Adam really loves football so he loves tennis even more.</span></li>
+            <li><span>Adam really loves football or he loves tennis even more.</span></li>
+            <li><span>Adam really loves football but he loves tennis even more.</span></li>
+        </ol>
+    </li>
+
+    <li id="q9">
+    <img src="../../media/630100/nosport.png" />
+        <ol class="answers">
+            <li><span>You can play football all the time.</span></li>
+            <li><span>You can play football on Sunday.</span></li>
+            <li><span>You can play any sport during the week.</span></li>
+        </ol>
+    </li>
+
+    <li id="q10">
+        They enjoy going to the park every morning, <select class="answers">
+            <option>don't they?</option>
+            <option>they do?</option>
+            <option>do they?</option>
+        </select>
+        
+    </li>
+
+    <li id="q11">
+        Helen lost her new book. Then she saw <select class="answers">
+            <option>her</option>
+            <option>him</option>
+            <option>it</option>
+        </select> on the floor.
+    </li>
+
+    <li id="q12">
+        Whatever you do, don't stay up <select class="answers">
+            <option>two</option>
+            <option>to</option>
+            <option>too</option>
+        </select> late. We have a busy day tomorrow.
+    </li>
+
+    <li id="q13">
+        Many doctors say that walking quickly for 30 minutes is the <select class="answers">
+            <option>best</option>
+            <option>good</option>
+            <option>great</option>
+        </select> type of exercise.
+    </li>
+
+    <li id="q14">
+        The <select class="answers">
+            <option>cats</option>
+            <option>cat's</option>
+            <option>Cats'</option>
+        </select> tail is very long.       
+    </li>
+
+    <li id="q15">
+        Last night I had just decided to go to bed. <select class="answers">
+            <option>Meanwhile</option>
+            <option>As a result</option>
+            <option>Just then</option>
+        </select> there was a knock on the door.
+    </li>
+</ol>
+</body>
+</html>

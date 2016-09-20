@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/rubric.css" />
+    <link rel="stylesheet" href="../../css/drag-exercise.css" />
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "questionType": "DragQuestion",
+            "source": "#q1",
+            "block": "#b1",
+            "answers": [
+              {
+                "source": "#a6",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DragQuestion",
+            "source": "#q2",
+            "block": "#b2",
+            "answers": [
+              {
+                "source": "#a3",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DragQuestion",
+            "source": "#q3",
+            "block": "#b3",
+            "answers": [
+              {
+                "source": "#a1",
+                "correct": true
+              }
+            ]
+          },
+          {
+            "questionType": "DragQuestion",
+            "source": "#q4",
+            "block": "#b4",
+            "answers": [
+              {
+                "source": "#a8",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+</head>
+<body>
+<header class="rubric">
+    Match a word from the list at the top that is often used with the word in the question. Use each word once only. An example is done for you.
+</header>
+
+<section class="draggables">
+    <span id="a1" draggable="true">reigns</span>
+    <span id="a2" draggable="true">route</span>
+    <span id="a3" draggable="true">fingers</span>
+    <span id="a4" draggable="false">diet</span>
+    <span id="a5" draggable="true">plate</span>
+    <span id="a6" draggable="true">face</span>
+    <span id="a7" draggable="true">drain</span>
+    <span id="a8" draggable="true">background</span>
+</section>
+<ol class="questions">
+    <li><label>strict</label> <u>diet</u></li>
+
+    <li id="b1"><label>ruddy</label> <span id="q1" class="droptarget"></span></li>
+
+    <li id="b2"><label>clumsy</label> <span id="q2" class="droptarget"></span></li>
+
+    <li id="b3"><label>successive</label> <span id="q3" class="droptarget"></span></li>
+
+    <li id="b4"><label>humble</label> <span id="q4" class="droptarget"></span></li>
+</ol>
+</body>
+</html>

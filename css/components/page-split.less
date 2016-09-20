@@ -19,32 +19,21 @@
     overflow-y: auto;
 }
 
-p {
-    padding: 0 20px;
-    line-height: 26px;
+.content.mod-split-one, .content.mod-split-two {
+  width: 100%;
 }
 
-.page-split-two-content {
-    width: 100%;
-    flex: 1;
-}
-
-@media @mediumScreen, @largeScreen, @extraLargeScreen {
-  .page-split-two-content {    
-    ol.questions > li {
-      margin: 20px 0 0 0;
-    }
-  }
+.content.mod-split-one  p {
+  padding: 0 20px;
 }
 
 @media @smallScreen, @mediumScreen {
+    .page-split-one {
+        padding-right: 23px;
+    }
+
     .page-split-two {
        padding-left: 23px; 
-    }
-    
-    .page-split-one-content {
-        margin-right: 23px;
-        margin-bottom: 20px;   
     }
 
     .page-split-sidebar {
@@ -106,7 +95,6 @@ p {
         max-width: 1024px;
         left: 50%;
         transform: translateX(-50%);
-
         border: 1px solid @light-grey;
         box-shadow: 0 0 5px @light-grey;
     }
@@ -119,10 +107,6 @@ p {
         padding: 0 15px 0 23px;
     }
 
-    .page-split-one-content {
-        margin-right: 0px;   
-    }
-
     .page-split-sidebar.mod-page-two  {
       position: absolute;
       display: block;
@@ -130,7 +114,9 @@ p {
       bottom: 0;
       left: 50%;
       width: 5px;
+      height: 100%;
       background-color: #dbdbdb;
+      transform: translate3d(0px,0px,0px);
     }
 
     .page-split-sidebar-text {

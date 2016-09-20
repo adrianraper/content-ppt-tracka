@@ -5,102 +5,72 @@
 
   <link rel="stylesheet" href="../css/styles.less" />
 
-  <style>
-    img {
-      width: 100%;
-    }
-  </style>
-
   <script id="model" type="application/json">
-  {
-            "id": "4af012fc-0534-4402-ad39-2cb4237fec78",
+    {
+        "questions": [
+          {
+            "id": "e39b020c-a74c-40f5-9db5-0f4edb2f81ff",
             "questionType": "DragQuestion",
-            "source": "#q18",
-            "block": "#b7",
-            "group": "#g3",
+            "source": "#q1",
+            "block": "#b1",
+            "group": "#g1",
             "answers": [
               {
-                "source": "#a21",
+                "source": "#a4",
                 "correct": true
               }
             ]
           },
           {
-            "id": "9e95c9bc-d81c-49ff-af40-6821a12fd8ed",
+            "id": "001f94ae-570d-4726-b8a7-4747764e4d1e",
             "questionType": "DragQuestion",
-            "source": "#q19",
-            "block": "#b7",
-            "group": "#g3",
+            "source": "#q2",
+            "block": "#b1",
+            "group": "#g1",
             "answers": [
               {
-                "source": "#a19",
+                "source": "#a2",
                 "correct": true
               }
             ]
           },
           {
-            "id": "c97c6225-9ddf-46e7-930c-425a2172effd",
+            "id": "3abc9f0f-f85d-4173-8d4e-6ccad6046581",
             "questionType": "DragQuestion",
-            "source": "#q20",
-            "block": "#b7",
-            "group": "#g3",
+            "source": "#q3",
+            "block": "#b1",
+            "group": "#g1",
             "answers": [
               {
-                "source": "#a22",
+                "source": "#a1",
                 "correct": true
               }
             ]
           },
           {
-            "id": "a1ae90c6-9c1b-4004-bed7-e2510a0d5326",
+            "id": "233f6544-9f55-424f-931e-1b3608c0bdc7",
             "questionType": "DragQuestion",
-            "source": "#q21",
-            "block": "#b7",
-            "group": "#g3",
+            "source": "#q4",
+            "block": "#b1",
+            "group": "#g1",
             "answers": [
               {
-                "source": "#a17",
+                "source": "#a3",
                 "correct": true
               }
             ]
           },
           {
-            "id": "245271ef-3d78-417a-8b43-895af41e9cd0",
+            "id": "ef0431a9-2a12-4fa7-bfd2-fda9f9e38536",
             "questionType": "DragQuestion",
-            "source": "#q22",
-            "block": "#b7",
-            "group": "#g3",
+            "source": "#q5",
+            "block": "#b1",
+            "group": "#g1",
             "answers": [
               {
-                "source": "#a20",
+                "source": "#a5",
                 "correct": true
               }
-            ]
-          },
-          {
-            "id": "7df93d0e-60eb-44d2-9561-0c8177bcc5fd",
-            "questionType": "DragQuestion",
-            "source": "#q23",
-            "block": "#b7",
-            "group": "#g3",
-            "answers": [
-              {
-                "source": "#a23",
-                "correct": true
-              }
-            ]
-          },
-          {
-            "id": "1994680b-71d8-4020-a022-ae5a9a78bf54",
-            "questionType": "DragQuestion",
-            "source": "#q24",
-            "block": "#b7",
-            "group": "#g3",
-            "answers": [
-              {
-                "source": "#a18",
-                "correct": true
-                }
             ]
           }
         ]
@@ -109,33 +79,21 @@
         </script>
 <body>
   <div class="container">
-    <header class="rubric">
-      <div class="rubric-text">
-<hr/>
-        
-        Order sentences to form short dialogue or text 
-        <li id="q9">
-          <span id="a32" draggable="true">What is your favourite?</span>
-          <span id="a33" draggable="true">Yes, I really love sport.</span>
-          <span id="a34" draggable="true">Football.</span>
-          <span id="a35" draggable="true">Do you have any hobbies?</span>
-          <span id="a36" draggable="true">I love it too.</span>
-          <span id="q33" class="droptarget"></span><span id="q34" class="droptarget"></span><span id="q35" class="droptarget"></span><span id="q36" class="droptarget"></span><span id="q37" class="droptarget"></span>
-        </li>
-
-        Order sentences to form short dialogue or text 
-        <li id="q10">
-          <span id="a37" draggable="true">A house with a big garden.</span>
-          <span id="a38" draggable="true">Where do you live?</span>
-          <span id="a39" draggable="true">In a house or in a flat?</span>
-          <span id="a40" draggable="true">Nice! I'd like to have a big garden.</span>
-          <span id="a41" draggable="true">In a small town near here.</span>
-          <span id="q38" class="droptarget"></span><span id="q39" class="droptarget"></span><span id="q40" class="droptarget"></span><span id="q41" class="droptarget"></span><span id="q42" class="droptarget"></span>
-        </li>
-
+    <header class="rubric">Order sentences to form short dialogue or text</header>
+        <section class="draggables">
+          <span id="a1" draggable="true">What is your favourite?</span>
+          <span id="a2" draggable="true">Yes, I really love sport.</span>
+          <span id="a3" draggable="true">Football.</span>
+          <span id="a4" draggable="true">Do you have any hobbies?</span>
+          <span id="a5" draggable="true">I love it too.</span>
+        </section>
+        <div class="content mod-dragdrop mod-vertical-align mod-border mod-card">
+          <span id="q1" class="droptarget mod-sentencereorderdrag"></span><br/>
+          <span id="q2" class="droptarget mod-sentencereorderdrag"></span><br/>
+          <span id="q3" class="droptarget mod-sentencereorderdrag"></span><br/>
+          <span id="q4" class="droptarget mod-sentencereorderdrag"></span><br/>
+          <span id="q5" class="droptarget mod-sentencereorderdrag"></span>
         </div>
-      </header>
-    </div>
+  </div>
 </body>
-</head>
 </html>

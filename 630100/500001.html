@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/rubric.css" />
+    <link rel="stylesheet" href="../../css/drop-down-exercise.css" />
+
+    <style>
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
+
+    <script id="model" type="application/json">
+      {
+	    "conditions": [
+            {
+                "condition": "threshold", "metric": "score",
+                "upper": "49",
+                "tags": "#CEFRA"
+            },
+            {
+                "condition": "limits", "metric": "score",
+                "lower": "50", "upper": "74",
+                "tags": "#CEFRB"
+            },
+            {
+                "condition": "threshold", "metric": "score",
+                "lower": "75",
+                "tags": "#CEFRC"
+            },
+            {
+                "condition": "always",
+                "tags": "#listening #english"
+            }
+		],
+        "questions": [
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q1",
+            "source": "#q1",
+            "answers": [
+              {
+                "source": "#q1 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q1 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q1 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q2",
+            "source": "#q2",
+            "answers": [
+              {
+                "source": "#q2 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q2 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q2 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q3",
+            "source": "#q3",
+            "answers": [
+              {
+                "source": "#q3 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q3 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q3 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q4",
+            "source": "#q4",
+            "answers": [
+              {
+                "source": "#q4 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q4 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q4 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "questionType": "DropdownQuestion",
+            "block": "#q5",
+            "source": "#q5",
+            "answers": [
+              {
+                "source": "#q5 option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#q5 option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#q5 option:nth-child(3)",
+                "correct": false
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+<body>
+<header class="rubric">
+    Read the text and choose the best missing words.
+</header>
+<p>Hi Helen,</p>
+<p>I'm going on holiday to Paris. I'm at the train station now. Our train doesn't leave for an hour. 
+My brother's tired and is (1) 
+        <select class="answers" id="q1">
+            <option>sitting</option>
+            <option>walking</option>
+            <option>jumping</option>
+        </select> on his suitcase. 
+My sister's (2) 
+        <select class="answers" id="q2">
+            <option>reading</option>
+            <option>watching</option>
+            <option>keeping</option>
+        </select> a magazine. 
+My father's (3) 
+        <select class="answers" id="q3">
+            <option>buying</option>
+            <option>selling</option>
+            <option>giving</option>
+        </select> the tickets. 
+We're waiting for him to come (4) 
+        <select class="answers" id="q4">
+            <option>back</option>
+            <option>away</option>
+            <option>into</option>
+        </select>. 
+We can't carry the suitcases without (5) 
+        <select class="answers" id="q5">
+            <option>him</option>
+            <option>her</option>
+            <option>us</option>
+        </select> because they're very heavy. 
+I'm really excited because I like to travel by train.</p>
+<p>See you when I get back.</p>
+<p>Mary</p>
+</body>
+</html>

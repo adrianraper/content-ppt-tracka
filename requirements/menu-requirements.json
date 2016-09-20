@@ -1,0 +1,21 @@
+{
+  "startingExerciseId": "20160630001",
+  "courses": [
+    {
+      "id": "20160630",
+      "units": [
+        {
+          "id": "201606301",
+          "caption": "Requirements",
+          "exercises": [
+            {
+              "id": "20160630001",
+              "caption": "Requirements",
+              "href": "requirements/requirements.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
