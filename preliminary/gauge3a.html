@@ -15,68 +15,73 @@
    {
         "questions": [
           {
-            "id": "78b92489-66c3-4b22-a788-266de51f7c39",
+            "id": "e39b020c-a74c-40f5-9db5-0f4edb2f81ff",
             "questionType": "DragQuestion",
-            "source": "#q33",
-            "block": "#b9",
-            "group": "#g5",
+            "source": "#q1",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a35",
+                "source": "#a14",
                 "correct": true
               }
             ]
           },
           {
-            "id": "8ab2de51-f56c-496f-8371-bdcdcd6ffaf4",
+            "id": "001f94ae-570d-4726-b8a7-4747764e4d1e",
             "questionType": "DragQuestion",
-            "source": "#q34",
-            "block": "#b9",
-            "group": "#g5",
+            "source": "#q2",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a33",
+                "source": "#a12",
                 "correct": true
               }
             ]
           },
           {
-            "id": "0f74e576-fab0-4f3e-b78a-e94bc0c9db49",
+            "id": "3abc9f0f-f85d-4173-8d4e-6ccad6046581",
             "questionType": "DragQuestion",
-            "source": "#q35",
-            "block": "#b9",
-            "group": "#g5",
+            "source": "#q3",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a32",
+                "source": "#a11",
                 "correct": true
               }
             ]
           },
           {
-            "id": "4b34bb56-4afa-4728-a7a3-93e1738920d0",
+            "id": "233f6544-9f55-424f-931e-1b3608c0bdc7",
             "questionType": "DragQuestion",
-            "source": "#q36",
-            "block": "#b9",
-            "group": "#g5",
+            "source": "#q4",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a34",
+                "source": "#a13",
                 "correct": true
               }
             ]
           },
           {
-            "id": "cdc950c3-59df-4cd4-8273-16bd0d8f8194",
+            "id": "ef0431a9-2a12-4fa7-bfd2-fda9f9e38536",
             "questionType": "DragQuestion",
-            "source": "#q37",
-            "block": "#b9",
-            "group": "#g5",
+            "source": "#q5",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a36",
+                "source": "#a15",
                 "correct": true
-                }
+              }
             ]
           }
         ]
@@ -85,23 +90,22 @@
         </script>
 <body>
   <div class="container">
-    <header class="rubric">
-      <div class="rubric-text">
-<hr/>
-        
-        Order sentences to form short dialogue or text 
-        <li id="q9">
-          <span id="a32" draggable="true">What is your favourite?</span>
-          <span id="a33" draggable="true">Yes, I really love sport.</span>
-          <span id="a34" draggable="true">Football.</span>
-          <span id="a35" draggable="true">Do you have any hobbies?</span>
-          <span id="a36" draggable="true">I love it too.</span>
-          <span id="q33" class="droptarget"></span><span id="q34" class="droptarget"></span><span id="q35" class="droptarget"></span><span id="q36" class="droptarget"></span><span id="q37" class="droptarget"></span>
-        </li>
-
+    <header class="rubric">Order sentences to form short dialogue or text</header>
+        <section class="draggables">
+          <span id="a11" draggable="true">What is your favourite?</span>
+          <span id="a12" draggable="true">Yes, I really love sport.</span>
+          <span id="a13" draggable="true">Football.</span>
+          <span id="a14" draggable="true">Do you have any hobbies?</span>
+          <span id="a15" draggable="true">I love it too.</span>
+        </section>
+        <div class="content mod-dragdrop mod-vertical-align mod-border mod-card">
+          <span id="q1" class="droptarget mod-sentencereorderdrag"></span><br/>
+          <span id="q2" class="droptarget mod-sentencereorderdrag"></span><br/>
+          <span id="q3" class="droptarget mod-sentencereorderdrag"></span><br/>
+          <span id="q4" class="droptarget mod-sentencereorderdrag"></span><br/>
+          <span id="q5" class="droptarget mod-sentencereorderdrag"></span>
+          </div>
         </div>
-      </header>
-    </div>
 </body>
 </head>
 </html>

@@ -14,95 +14,101 @@
   <script id="model" type="application/json">
   {
         "questions": [
-         {
-            "id": "b2056c7d-2576-4eb9-bb07-30bd81b291be",
+          {
+            "id": "90bd3cfd-8852-4088-b01d-d872b2e3591b",
             "questionType": "DragQuestion",
-            "source": "#q79",
-            "block": "#b20",
-            "group": "#g11",
+            "source": "#q1",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a81",
+                "source": "#a15",
                 "correct": true
               }
             ]
           },
           {
-            "id": "6ec0bfd9-dd2f-44f6-b48c-236c3c5a041d",
+            "id": "f09a2ca1-7709-4e2e-b9f5-5db67cba5b00",
             "questionType": "DragQuestion",
-            "source": "#q80",
-            "block": "#b20",
-            "group": "#g11",
+            "source": "#q2",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a77",
+                "source": "#a11",
                 "correct": true
               }
             ]
           },
           {
-            "id": "2707521a-fc14-48b0-8e75-f474ec3fe57f",
+            "id": "c2ffac8d-d1d6-4ed4-b49c-4780b29cfe69",
             "questionType": "DragQuestion",
-            "source": "#q81",
-            "block": "#b20",
-            "group": "#g11",
+            "source": "#q3",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a78",
+                "source": "#a12",
                 "correct": true
               }
             ]
           },
           {
-            "id": "c251b20a-9a61-4438-a3f0-29b35c0111af",
+            "id": "78168b79-f9c4-42d2-b629-e061ebd51e4d",
             "questionType": "DragQuestion",
-            "source": "#q82",
-            "block": "#b20",
-            "group": "#g11",
+            "source": "#q4",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a80",
+                "source": "#a14",
                 "correct": true
               }
             ]
           },
           {
-            "id": "2ba7eb39-f774-4c2d-9eff-9ddcd9a7ea77",
+            "id": "eabb3a02-7f93-44b6-a681-5eda038910be",
             "questionType": "DragQuestion",
-            "source": "#q83",
-            "block": "#b20",
-            "group": "#g11",
+            "source": "#q5",
+            "block": "#b1",
+            "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a79",
+                "source": "#a13",
                 "correct": true
               }
             ]
           }
         ]
       }
-    </script>
-        
+</script>
+</head>
+    
     <body>
   <div class="container">
-    <header class="rubric">
-      <div class="rubric-text">
-          <hr/>
+    <header class="rubric">Order sentences to form short dialogue or text</header>
           
-Order sentences to form short dialogue or text 
-        <li id="q20">
-          <span id="a77" draggable="true">No, but I would like to try it.</span>
-          <span id="a78" draggable="true">Shall we go together on Saturday?</span>
-          <span id="a79" draggable="true">Ok. I will reserve a table for Sunday at 7.</span>
-          <span id="a80" draggable="true">I have to work on Saturday. I can go on Sunday.</span>
-          <span id="a81" draggable="true">Have you ever eaten at Bruno’s Restaurant?</span>
-          <span id="q79" class="droptarget"></span><span id="q80" class="droptarget"></span><span id="q81" class="droptarget"></span><span id="q82" class="droptarget"></span><span id="q83" class="droptarget"></span>
-        </li>
-
-        <hr/>
+          <li class="questions-list" id="g1">01
+          <section class="draggables">
+              <span id="a11" draggable="true">No, but I would like to try it.</span>
+              <span id="a12" draggable="true">Shall we go together on Saturday?</span>
+              <span id="a13" draggable="true">Ok. I will reserve a table for Sunday at 7.</span>
+              <span id="a14" draggable="true">I have to work on Saturday. I can go on Sunday.</span>
+              <span id="a15" draggable="true">Have you ever eaten at Bruno’s Restaurant?</span>
+          </section>
+          <div class="content mod-dragdrop mod-horizontal-align">
+            <span id="q1" class="droptarget mod-wordreorderdrag"></span> 
+            <span id="q2" class="droptarget mod-wordreorderdrag"></span> 
+            <span id="q3" class="droptarget mod-wordreorderdrag"></span> 
+            <span id="q4" class="droptarget mod-wordreorderdrag"></span> 
+            <span id="q5" class="droptarget mod-wordreorderdrag"></span>
           </div>
-      </header>
-    </div>          
-</body>
-</head>
+        </li>
+    </div>
+</body>         
 </html>

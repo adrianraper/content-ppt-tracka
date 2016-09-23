@@ -14,93 +14,101 @@
   <script id="model" type="application/json">
   {
         "questions": [
-         {
-            "id": "18ee404f-eccf-48fb-a19d-e1598715ad36",
+          {
+            "id": "90bd3cfd-8852-4088-b01d-d872b2e3591b",
             "questionType": "DragQuestion",
-            "source": "#q84",
-            "block": "#b21",
-            "group": "#g11",
+            "source": "#q6",
+            "block": "#b2",
+            "group": "#g2",
+            "draggables": "#g2 > .draggables",
             "answers": [
               {
-                "source": "#a83",
+                "source": "#a22",
                 "correct": true
               }
             ]
           },
           {
-            "id": "deba90e0-b6b1-49b3-bfe6-d9e775681894",
+            "id": "f09a2ca1-7709-4e2e-b9f5-5db67cba5b00",
             "questionType": "DragQuestion",
-            "source": "#q84",
-            "block": "#b21",
-            "group": "#g11",
+            "source": "#q7",
+            "block": "#b2",
+            "group": "#g2",
+            "draggables": "#g2 > .draggables",
             "answers": [
               {
-                "source": "#a86",
+                "source": "#a25",
                 "correct": true
               }
             ]
           },
           {
-            "id": "6a4ccdda-c6d7-44e3-995d-19cb4b44ae86",
+            "id": "c2ffac8d-d1d6-4ed4-b49c-4780b29cfe69",
             "questionType": "DragQuestion",
-            "source": "#q84",
-            "block": "#b21",
-            "group": "#g11",
+            "source": "#q8",
+            "block": "#b2",
+            "group": "#g2",
+            "draggables": "#g2 > .draggables",
             "answers": [
               {
-                "source": "#a85",
+                "source": "#a24",
                 "correct": true
               }
             ]
           },
           {
-            "id": "f5ae0e0b-0a2b-4766-8a93-295b18dd8a4a",
+            "id": "78168b79-f9c4-42d2-b629-e061ebd51e4d",
             "questionType": "DragQuestion",
-            "source": "#q84",
-            "block": "#b21",
-            "group": "#g11",
+            "source": "#q9",
+            "block": "#b2",
+            "group": "#g2",
+            "draggables": "#g2 > .draggables",
             "answers": [
               {
-                "source": "#a82",
+                "source": "#a21",
                 "correct": true
               }
             ]
           },
           {
-            "id": "c954f138-2fff-45fc-a553-60b68412a4b0",
+            "id": "eabb3a02-7f93-44b6-a681-5eda038910be",
             "questionType": "DragQuestion",
-            "source": "#q84",
-            "block": "#b21",
-            "group": "#g11",
+            "source": "#q10",
+            "block": "#b2",
+            "group": "#g2",
+            "draggables": "#g2 > .draggables",
             "answers": [
               {
-                "source": "#a84",
+                "source": "#a23",
                 "correct": true
               }
             ]
           }
         ]
       }
-    </script>
-        
+</script>
+</head>
+     
     <body>
   <div class="container">
-    <header class="rubric">
-      <div class="rubric-text">
-          <hr/>
-      Order sentences to form short dialogue or text 
-        <li id="q21">
-          <span id="a82" draggable="true">Yes, it was my youngest sister’s birthday.</span>
-          <span id="a83" draggable="true">Who are these people in the photo, Sam?</span>
-          <span id="a84" draggable="true">She looks very happy!</span>
-          <span id="a85" draggable="true">Were you having a party? </span>
-          <span id="a86" draggable="true">That is my family in our garden.</span>
-          <span id="q84" class="droptarget"></span><span id="q85" class="droptarget"></span><span id="q86" class="droptarget"></span><span id="q87" class="droptarget"></span><span id="q88" class="droptarget"></span>
-        </li>
-        <hr/>
+    <header class="rubric">Order sentences to form short dialogue or text</header>
+          
+          <li class="questions-list" id="g2">02
+          <section class="draggables">
+              <span id="a21" draggable="true">Yes, it was my youngest sister’s birthday.</span>
+              <span id="a22" draggable="true">Who are these people in the photo, Sam?</span>
+              <span id="a23" draggable="true">She looks very happy!</span>
+              <span id="a24" draggable="true">Were you having a party?</span>
+              <span id="a25" draggable="true">That is my family in our garden.</span>
+          </section>
+          <div class="content mod-dragdrop mod-horizontal-align">
+            <span id="q6" class="droptarget mod-wordreorderdrag"></span> 
+            <span id="q7" class="droptarget mod-wordreorderdrag"></span> 
+            <span id="q8" class="droptarget mod-wordreorderdrag"></span> 
+            <span id="q9" class="droptarget mod-wordreorderdrag"></span> 
+            <span id="q10" class="droptarget mod-wordreorderdrag"></span>
           </div>
-      </header>
-    </div>          
-</body>
-</head>
+        </li>
+    </div>
+</body>         
 </html>
