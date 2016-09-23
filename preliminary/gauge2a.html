@@ -15,66 +15,71 @@
    {
         "questions": [
           {
-            "id": "1a9da53f-f4f6-4fe6-8481-e0f75395c3d4",
+            "id": "90bd3cfd-8852-4088-b01d-d872b2e3591b",
             "questionType": "DragQuestion",
-            "source": "#q6",
-            "block": "#b6",
+            "source": "#q1",
+            "block": "#b1",
             "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a7",
+                "source": "#a13",
                 "correct": true
               }
             ]
           },
           {
-            "id": "a656a4a8-5a34-403a-8772-a7818bad9113",
+            "id": "f09a2ca1-7709-4e2e-b9f5-5db67cba5b00",
             "questionType": "DragQuestion",
-            "source": "#q7",
-            "block": "#b6",
+            "source": "#q2",
+            "block": "#b1",
             "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a6",
+                "source": "#a12",
                 "correct": true
               }
             ]
           },
           {
-            "id": "13036a7b-0ce8-482e-93df-fa71dbfd3091",
+            "id": "c2ffac8d-d1d6-4ed4-b49c-4780b29cfe69",
             "questionType": "DragQuestion",
-            "source": "#q8",
-            "block": "#b6",
+            "source": "#q3",
+            "block": "#b1",
             "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a5",
+                "source": "#a11",
                 "correct": true
               }
             ]
           },
           {
-            "id": "069f0a13-caa4-4b2b-8534-7ae7e29d9967",
+            "id": "78168b79-f9c4-42d2-b629-e061ebd51e4d",
             "questionType": "DragQuestion",
-            "source": "#q9",
-            "block": "#b6",
+            "source": "#q4",
+            "block": "#b1",
             "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a8",
+                "source": "#a14",
                 "correct": true
               }
             ]
           },
           {
-            "id": "3390cfcf-6d3a-45cd-b44f-86e3d59fd095",
+            "id": "eabb3a02-7f93-44b6-a681-5eda038910be",
             "questionType": "DragQuestion",
-            "source": "#q10",
-            "block": "#b6",
+            "source": "#q5",
+            "block": "#b1",
             "group": "#g1",
+            "draggables": "#g1 > .draggables",
             "answers": [
               {
-                "source": "#a9",
+                "source": "#a15",
                 "correct": true
               }
             ]
@@ -82,27 +87,29 @@
         ]
       }  
   </script>
+    </head>
         
-        <body>
-  <div class="container">
-    <header class="rubric">
-      <div class="rubric-text">
-         <hr/>
-        
-        Order the words to form a sentence.
-        <li id="q5">
-          <span id="a5" draggable="true">a</span>
-          <span id="a6" draggable="true">bought</span>
-          <span id="a7" draggable="true">my uncle</span>
-          <span id="a8" draggable="true">new</span>
-          <span id="a9" draggable="true">car</span>
-          <span id="q6" class="droptarget"></span><span id="q7" class="droptarget"></span><span id="q8" class="droptarget"></span><span id="q9" class="droptarget"></span><span id="q10" class="droptarget"></span>
-        </li>
-
-        <hr/>
-        </div>
-      </header>
-            </div>
-        </body>
-         </head>
+<body>
+<div class="container">
+<header class="rubric">Order the words to form a sentence.</header>
+      
+   <ol class="questions">
+        <li class="questions-list" id="g1">01
+          <p class="questions-list-title">
+            Touch or click each gap and choose or drag the right word.
+          </p>
+          <section class="draggables">
+              <span id="a11" draggable="true">a</span>
+              <span id="a12" draggable="true">bought</span>
+              <span id="a13" draggable="true">my uncle</span>
+              <span id="a14" draggable="true">new</span>
+              <span id="a15" draggable="true">car</span>
+          </section>
+          <div class="content mod-dragdrop mod-horizontal-align">
+            <span id="q1" class="droptarget mod-wordreorderdrag"></span> <span id="q2" class="droptarget mod-wordreorderdrag"></span> <span id="q3" class="droptarget mod-wordreorderdrag"></span> <span id="q4" class="droptarget mod-wordreorderdrag"></span> <span id="q5" class="droptarget mod-wordreorderdrag"></span>
+</div>
+</li>
+</ol>
+</div>       
+</body>
 </html>
