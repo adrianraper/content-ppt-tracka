@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="../css/styles.less" />
+    <link rel="stylesheet" href="../css/unscrollable.less" />
+
+    <style>
+    </style>
+
+    <script id="model" type="application/json">
+      {
+        "questions": [
+        {
+            "id": "d8bf84df-502f-4203-8c63-18549a183a1e",
+            "questionType": "FreeDragQuestion",
+            "block": "#q1",
+            "source": "#d1",
+            "answers": [
+              {
+                "source": "#a1",
+                "correct": true
+              }
+            ]  
+          },
+          {
+            "id": "d8bf84df-502f-4203-8c63-18549a183a1e",
+            "questionType": "FreeDragQuestion",
+            "block": "#q2",
+            "source": "#d2",
+            "answers": [
+              {
+                "source": "#a2",
+                "correct": true
+              }
+            ]  
+          },
+          {
+            "id": "d8bf84df-502f-4203-8c63-18549a183a1e",
+            "questionType": "FreeDragQuestion",
+            "block": "#q3",
+            "source": "#d3",
+            "answers": [
+              {
+                "source": "#a3",
+                "correct": true
+              }
+            ]  
+          },
+          {
+            "id": "d8bf84df-502f-4203-8c63-18549a183a1e",
+            "questionType": "FreeDragQuestion",
+            "block": "#q4",
+            "source": "#d4",
+            "answers": [
+              {
+                "source": "#a4",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+    <div class="page-split mod-requirement">
+        <div class="page-split-one">
+            <header class="rubric mod-split">
+                Drag single word to correct position in sentence.
+            </header>
+            <div class="page-split-one-content"></div>
+            
+            <div class="page-split-sidebar mod-page-one">
+              <span class="page-split-sidebar-text mod-page-one">Questions</span>
+            </div>
+        </div>
+
+        <div class="page-split-two">
+          <div class="container mod-split">
+            <div class="page-split-sidebar mod-page-two">
+              <span class="page-split-sidebar-text mod-page-two"></span>
+            </div>  
+            
+            <div class="content mod-split-two">
+              <ol class="questions">
+                  
+            <li class="questions-list">01
+                  <p class="questions-list-title"></p>
+                  <p class="questions-list-paragraph mod-freedrag" id="q1">
+                    <span>I thought<span id="a1" class="freedroptarget space"></span>terrible was going to happen.</span>
+                    <span id="d1" class="freedraggable">something</span>
+                  </p>
+                </li>
+                  
+            <li class="questions-list">02
+                  <p class="questions-list-title"></p>
+                  <p class="questions-list-paragraph mod-freedrag" id="q2">
+                    <span>When I arrived I didn't speak<span id="a2" class="freedroptarget space"></span>English.</span>
+                    <span id="d2" class="freedraggable">of</span>
+                  </p>
+                </li>
+                  
+            <li class="questions-list">03
+                  <p class="questions-list-title"></p>
+                  <p class="questions-list-paragraph mod-freedrag" id="q3">
+                    <span>Everyone knows we should eat vegetables<span id="a3" class="freedroptarget space"></span>than junk food.</span>
+                    <span id="d3" class="freedraggable">rather</span>
+                  </p>
+                </li>
+                  
+            <li class="questions-list">04
+                  <p class="questions-list-title"></p>
+                  <p class="questions-list-paragraph mod-freedrag" id="q4">
+                    <span>We can<span id="a4" class="freedroptarget space"></span>visit the science museum or go on a bus tour.</span>
+                    <span id="d4" class="freedraggable">either</span>
+                  </p>
+                </li>
+                  
+              </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
