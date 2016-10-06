@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <link rel="stylesheet" href="../../css/styles.less" />
+  <style></style>
+  <script id="model" type="application/json">
+      {
+        "questions": [
+          {
+            "id": "9a418af5-2508-4b33-bdaa-e96d25c37f17",
+            "questionType": "DropdownQuestion",
+            "source": "#s1",
+            "answers": [
+              {
+                "source": "#s1 > option:nth-child(1)",
+                "correct": true
+              },
+              {
+                "source": "#s1 > option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#s1 > option:nth-child(3)",
+                "correct": false
+              },
+              {
+                "source": "#s1 > option:nth-child(4)",
+                "correct": false
+              },
+              {
+                "source": "#s1 > option:nth-child(5)",
+                "correct": false
+              },
+              {
+                "source": "#s1 > option:nth-child(6)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": "929966ea-44c8-4487-a7fb-0c6ed2e17fb0",
+            "questionType": "DropdownQuestion",
+            "source": "#s2",
+            "answers": [
+              {
+                "source": "#s2 > option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#s2 > option:nth-child(2)",
+                "correct": true
+              },
+              {
+                "source": "#s2 > option:nth-child(3)",
+                "correct": false
+              },
+              {
+                "source": "#s2 > option:nth-child(4)",
+                "correct": false
+              },
+              {
+                "source": "#s2 > option:nth-child(5)",
+                "correct": false
+              },
+              {
+                "source": "#s2 > option:nth-child(6)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": "cdb53f7e-b103-4a9f-97e6-bf1165c7f3cb",
+            "questionType": "DropdownQuestion",
+            "source": "#s3",
+            "answers": [
+              {
+                "source": "#s3 > option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#s3 > option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#s3 > option:nth-child(3)",
+                "correct": true
+              },
+              {
+                "source": "#s3 > option:nth-child(4)",
+                "correct": false
+              },
+              {
+                "source": "#s3 > option:nth-child(5)",
+                "correct": false
+              },
+              {
+                "source": "#s3 > option:nth-child(6)",
+                "correct": false
+              }
+            ]
+          },
+          {
+            "id": "27d44233-f410-4dae-b9df-7559c5d5c8dc",
+            "questionType": "DropdownQuestion",
+            "source": "#s4",
+            "answers": [
+              {
+                "source": "#s4 > option:nth-child(1)",
+                "correct": false
+              },
+              {
+                "source": "#s4 > option:nth-child(2)",
+                "correct": false
+              },
+              {
+                "source": "#s4 > option:nth-child(3)",
+                "correct": false
+              },
+              {
+                "source": "#s4 > option:nth-child(4)",
+                "correct": false
+              },
+              {
+                "source": "#s4 > option:nth-child(5)",
+                "correct": false
+              },
+              {
+                "source": "#s4 > option:nth-child(6)",
+                "correct": true
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="rubric">
+        You are taking part in the following conversations. Complete what you say with the words or phrases in the boxes. Decide which word or phrase is missing in items 11-18. You may use each word or phrase only once. Mark your answers on the answer sheet.
+    </header>
+
+    <div class="content mod-border mod-card">
+      <p>
+        <b>Booking a hotel room</b>
+      </p>
+      <p>
+        A:	Good morning. City Hotel Washington. My name is Roberta Smith. How can I help you?<br>
+        B:	Good morning. I'd like to know if there are still rooms free at your hotel for the Water Conference.
+      <select id="s1">
+        <option>I know</option>
+        <option>Just</option>
+        <option>Okay?</option>
+        <option>Thanks</option>
+        <option>Then</option>
+        <option>Very sorry</option>  
+      </select> I'm a bit late, but I had to change my original plans.<br>
+        A:	Well, we'll see. When is it exactly?<br>
+        B:	It's from the 15th to the 17th.<br>
+        A:	That's Monday to Wednesday then. Right. 
+      <select id="s2">
+        <option>I know</option>
+        <option>Just</option>
+        <option>Okay?</option>
+        <option>Thanks</option>
+        <option>Then</option>
+        <option>Very sorry</option>
+      </select> wait a moment, I'll check.<br>
+        B:	If it's a problem, I might come on the morning of the 16th.<br>
+        A:	Er ..., no, no, it's okay. I have a single room, non smoking, on the seventh floor. Is that 
+        <select id="s3">
+        <option>I know</option>
+        <option>Just</option>
+        <option>Okay?</option>
+        <option>Thanks</option>
+        <option>Then</option>
+        <option>Very sorry</option>
+      </select> 
+        B:	Oh, that's great. How much is it then? 
+        A:	That would be 150£ per night.
+        B:	Is that with breakfast?
+        A:	No, I'm 
+      <select id="s4">
+        <option>I know</option>
+        <option>Just</option>
+        <option>Okay?</option>
+        <option>Thanks</option>
+        <option>Then</option>
+        <option>Very sorry</option>
+      </select> , breakfast is not included. It's 15£. 
+        B:	Okay, I'll take the room anyway. Thanks very much.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
